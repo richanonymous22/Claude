@@ -12,6 +12,19 @@
   document.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
+  // Floating-pill nav (Fincrest-style homepage) mobile toggle
+  const fcToggle = document.querySelector(".fc-nav-toggle");
+  const fcLinks = document.querySelector(".fc-nav-links");
+  if (fcToggle && fcLinks) {
+    fcToggle.addEventListener("click", () => {
+      const open = fcLinks.classList.toggle("is-open");
+      fcToggle.setAttribute("aria-expanded", String(open));
+    });
+    fcLinks.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => fcLinks.classList.remove("is-open"))
+    );
+  }
+
   // Mobile menu
   if (toggle && mobileMenu) {
     toggle.addEventListener("click", () => {

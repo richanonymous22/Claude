@@ -3,518 +3,615 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Plemmo — Run your business. We'll run the rest.</title>
-    <meta
-      name="description"
-      content="Card machines, EPOS, business funding, signage, broadband and energy — all under one roof. One partner. One call. Real human help. UK-based."
-    />
+    <title>Plemmo — One partner for every business essential.</title>
+    <meta name="description" content="Card payments, EPOS, funding, signage, broadband and energy — all under one roof. Real human help. Save up to 40% and uncover hidden savings instantly." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff5c39'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Manrope,sans-serif' font-weight='800' font-size='18' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E"
-    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0d0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Manrope,sans-serif' font-weight='800' font-size='18' fill='%23c9eb4a'%3EP%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
-    <!-- Top bar -->
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <div>
-          📞 <strong>07842 088092</strong> — a real person picks up. Always.
-        </div>
-        <div class="topbar-tags">
-          <span>Transparent pricing</span>
-          <span>UK-based support</span>
-          <span>No mis-selling</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Plemmo home">
-          <span class="brand-mark" aria-hidden="true">P</span>
-          Plemmo
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="card-machines.html">Card Machines</a>
-          <a href="epos.html">EPOS</a>
-          <a href="funding.html">Funding</a>
-          <a href="signage.html">Signage</a>
-          <a href="utilities.html">Utilities</a>
-          <a href="call-centre.html">Call Handling</a>
-          <a href="about.html">About</a>
-        </nav>
-        <div class="nav-actions">
-          <a class="nav-call" href="tel:07842088092" aria-label="Call Plemmo">
-            📞 07842 088092
-          </a>
-          <a
-            class="btn btn-primary"
-            href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20from%20Plemmo."
-            target="_blank"
-            rel="noopener"
-          >
-            Free Quote
-            <span class="btn-arrow" aria-hidden="true">→</span>
-          </a>
-          <button
-            class="nav-toggle"
-            aria-label="Toggle menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-      <div class="mobile-menu" id="mobile-menu">
-        <a href="card-machines.html">Card Machines</a>
-        <a href="epos.html">EPOS</a>
-        <a href="funding.html">Funding</a>
-        <a href="signage.html">Signage</a>
-        <a href="utilities.html">Utilities</a>
-        <a href="call-centre.html">Call Handling</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn-primary" href="https://wa.me/447842088092" target="_blank" rel="noopener">
-          Get Free Quote on WhatsApp
-        </a>
-      </div>
-    </header>
-
     <main>
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero-bg" aria-hidden="true">
-          <span class="blob blob-a"></span>
-          <span class="blob blob-b"></span>
+      <!-- ================== HERO ================== -->
+      <section class="fc-hero">
+        <!-- Landscape SVG -->
+        <div class="fc-hero-scene" aria-hidden="true">
+          <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#eef2e2" />
+                <stop offset="1" stop-color="#cfdfa8" />
+              </linearGradient>
+              <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#9bbf6c" />
+                <stop offset="1" stop-color="#7ea951" />
+              </linearGradient>
+              <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#6e9849" />
+                <stop offset="1" stop-color="#577a37" />
+              </linearGradient>
+              <linearGradient id="hill3" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#4d6b2e" />
+                <stop offset="1" stop-color="#3a5421" />
+              </linearGradient>
+              <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0" /></filter>
+            </defs>
+            <rect width="1600" height="900" fill="url(#sky)" />
+            <!-- distant hills -->
+            <path d="M0 540 Q 200 460 400 510 T 800 500 T 1200 480 T 1600 510 V900 H0Z" fill="url(#hill1)" opacity=".75" />
+            <!-- mid hills -->
+            <path d="M0 640 Q 250 540 500 600 T 1000 590 T 1600 620 V900 H0Z" fill="url(#hill2)" />
+            <!-- foreground hill -->
+            <path d="M0 760 Q 300 660 700 720 T 1300 740 T 1600 720 V900 H0Z" fill="url(#hill3)" />
+            <!-- subtle grain -->
+            <rect width="1600" height="900" filter="url(#grain)" />
+          </svg>
         </div>
-        <div class="container hero-inner">
-          <p class="hero-eyebrow reveal">
-            <span class="dot"></span> One partner. One call. Real human help.
-          </p>
-          <h1 class="reveal" style="--delay: 60ms">
+
+        <!-- Floating pill nav -->
+        <nav class="fc-nav" aria-label="Primary">
+          <div class="fc-nav-inner">
+            <a class="brand" href="index.html"><span class="brand-mark">P</span>Plemmo</a>
+            <div class="fc-nav-links">
+              <a class="is-active" href="index.html">Home</a>
+              <a href="card-machines.html">Solutions</a>
+              <a href="funding.html">Funding</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <a class="btn btn-dark" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener">Get a Quote</a>
+            <button class="fc-nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+          </div>
+        </nav>
+
+        <div class="container fc-hero-inner">
+          <h1 class="reveal">
             Run your business.<br />
-            <span class="accent">We'll run the rest.</span>
+            Uncover savings <span class="accent">instantly.</span>
           </h1>
-          <p class="hero-sub reveal" style="--delay: 140ms">
-            From card payments and EPOS systems to funding, signage, broadband
-            and energy — Plemmo brings every essential business service under
-            one roof. One partner. One call. Real human help.
+          <p class="fc-hero-sub reveal" style="--delay:80ms">
+            Centralise card payments, track spending live, and cut admin by up to
+            40% — all from one trusted UK partner. Real humans on the phone, always.
           </p>
-          <div class="hero-cta reveal" style="--delay: 220ms">
-            <a
-              class="btn btn-whatsapp btn-lg"
-              href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote."
-              target="_blank"
-              rel="noopener"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.06 17.59L3 21.5l4-1.05a10 10 0 0 0 4.95 1.27h.01a10 10 0 0 0 7.09-17.81zM12 19.85a8.31 8.31 0 0 1-4.23-1.16l-.3-.18-2.39.63.64-2.32-.2-.31A8.31 8.31 0 1 1 12 19.85zm4.55-6.21c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.16.25-.65.81-.79.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1.01 2.55.13.16 1.74 2.66 4.22 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31z"/></svg>
-              Get a Free Quote on WhatsApp
+          <div class="fc-hero-cta reveal" style="--delay:160ms">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener">
+              Get a Free Quote
               <span class="btn-arrow" aria-hidden="true">→</span>
             </a>
-            <a class="btn btn-ghost btn-lg" href="tel:07842088092">
-              📞 Call 07842 088092
-            </a>
           </div>
-          <p class="hero-callnote reveal" style="--delay: 280ms">
-            Or call us on
-            <a href="tel:07842088092">07842 088092</a> — a real person picks up.
-            Always.
+
+          <!-- Floating cards -->
+          <div class="fc-floats" aria-hidden="true">
+            <!-- Visa Gold card -->
+            <div class="fc-card fc-card-pay">
+              <div class="pay-card">
+                <div class="pay-net">
+                  <span>Visa Gold</span>
+                  <span style="font-weight:700;letter-spacing:0">VISA</span>
+                </div>
+                <div class="pay-num">•••• 4982 ••3471</div>
+                <div class="pay-name">Plemmo Payware</div>
+              </div>
+              <div class="pay-meta">
+                <span>£12,300.8 <strong>USD</strong></span>
+              </div>
+              <div class="pay-link">See payment details →</div>
+            </div>
+
+            <!-- Phone -->
+            <div class="fc-card fc-card-phone">
+              <div class="fc-phone-screen">
+                <div class="fc-phone-bar">
+                  <span>9:41</span>
+                  <span>● ▴ ▮▮</span>
+                </div>
+                <div class="fc-phone-amount">£1,184.20</div>
+                <div class="fc-phone-label">Tap to charge customer</div>
+                <div class="fc-phone-keys">
+                  <span>1</span><span>2</span><span>3</span>
+                  <span>4</span><span>5</span><span>6</span>
+                  <span>7</span><span>8</span><span>9</span>
+                  <span>.</span><span>0</span><span>✓</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cash flow card -->
+            <div class="fc-card fc-card-cash">
+              <div class="cash-row">
+                <span class="visa-mark">VISA</span>
+                <span style="font-size:.72rem;color:var(--muted)">Today</span>
+              </div>
+              <div class="cash-amount">£35,700.40</div>
+              <div style="font-size:.72rem;color:var(--muted);margin-top:2px">7-day card volume</div>
+              <div class="cash-cards">
+                <span class="cc"></span><span class="cc"></span><span class="cc"></span><span class="cc"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== LOGO STRIP ================== -->
+      <section class="fc-logos">
+        <div class="container">
+          <div class="fc-logos-track">
+            <span style="font-weight:600">⊞ Microsoft</span>
+            <span>Google</span>
+            <span style="font-style:italic">stripe</span>
+            <span>Entrepreneur</span>
+            <span style="font-weight:700">Uber</span>
+            <span style="font-weight:700">Forbes</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== EFFECTIVE MANAGEMENT ================== -->
+      <section class="fc-section">
+        <div class="container">
+          <p class="fc-eyebrow reveal">Services</p>
+          <h2 class="fc-headline reveal" style="--delay:60ms">
+            Effective business management<br />can empower your team
+          </h2>
+          <div class="fc-feature">
+            <div class="fc-feature-img reveal">
+              <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#7ea951" />
+                    <stop offset="1" stop-color="#3a5421" />
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="600" fill="url(#bg2)" />
+                <!-- soft hill in background -->
+                <path d="M0 380 Q 150 320 300 360 T 600 340 V600 H0Z" fill="#577a37" />
+                <path d="M0 460 Q 200 380 400 420 T 600 410 V600 H0Z" fill="#3e5524" />
+                <!-- two figures (silhouettes) -->
+                <g transform="translate(200 180)">
+                  <!-- person 1 in yellow jacket -->
+                  <ellipse cx="60" cy="60" rx="38" ry="40" fill="#f4dca0" />
+                  <path d="M-10 110 Q 60 90 130 110 V260 Q 60 270 -10 260 Z" fill="#cfe07e" />
+                  <ellipse cx="60" cy="55" rx="6" ry="3" fill="#0a0d0a" />
+                  <ellipse cx="48" cy="50" rx="3" ry="3" fill="#0a0d0a" />
+                  <ellipse cx="72" cy="50" rx="3" ry="3" fill="#0a0d0a" />
+                </g>
+                <g transform="translate(330 200)">
+                  <!-- person 2 -->
+                  <ellipse cx="60" cy="60" rx="36" ry="38" fill="#e0bd92" />
+                  <path d="M-10 110 Q 60 90 130 110 V260 Q 60 270 -10 260 Z" fill="#0a0d0a" />
+                  <ellipse cx="60" cy="55" rx="5" ry="2.5" fill="#0a0d0a" />
+                  <ellipse cx="48" cy="50" rx="2.5" ry="2.5" fill="#0a0d0a" />
+                  <ellipse cx="72" cy="50" rx="2.5" ry="2.5" fill="#0a0d0a" />
+                </g>
+              </svg>
+            </div>
+            <div class="reveal" style="--delay:80ms">
+              <h3>Plemmo unifies everything <br />on one platform.</h3>
+              <ul class="fc-feature-list">
+                <li>Centralised payment data</li>
+                <li>Live cash-flow monitoring</li>
+                <li>Accurate, real-time reports</li>
+              </ul>
+              <a class="btn btn-primary" href="card-machines.html">
+                Get Started
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== DASHBOARD MOCKUPS ================== -->
+      <section class="fc-section fc-section-tint">
+        <div class="container">
+          <p class="fc-eyebrow reveal">Top Featured</p>
+          <h2 class="fc-headline reveal" style="--delay:60ms">
+            Effective business management<br />can empower your team
+          </h2>
+          <p class="fc-subhead reveal" style="--delay:120ms">
+            Plemmo helps independent UK businesses make smarter decisions, control expenses, and plan for sustainable growth.
           </p>
+
+          <div class="fc-dash">
+            <!-- Investments / Stocks card -->
+            <div class="mock mock-investments reveal">
+              <div class="mock-row">
+                <span>Investments</span>
+                <span class="arr">↗</span>
+              </div>
+              <div class="stocks">
+                <div class="stock"><span>Tesla</span><span class="pct">+1.2%</span></div>
+                <div class="stock"><span>£ Stock</span><span class="pct">−0.8%</span></div>
+                <div class="stock"><span>Apple</span><span class="pct">+2.4%</span></div>
+              </div>
+              <div class="badge">
+                <div class="av"><span></span><span></span><span></span></div>
+                <span>Friends and family</span>
+              </div>
+              <div class="big-amount">£4,263.<span class="small">90</span></div>
+            </div>
+
+            <!-- Cash flow card -->
+            <div class="mock mock-cashflow reveal" style="--delay:80ms">
+              <div class="mock-row">
+                <span>Cash Flow</span>
+                <span class="toggle"><span class="on">Monthly</span><span>Yearly</span></span>
+              </div>
+              <div class="total">£342,323.44</div>
+              <div class="chart">
+                <div class="bar" style="height: 30%"></div>
+                <div class="bar" style="height: 55%"></div>
+                <div class="bar" style="height: 42%"></div>
+                <div class="bar lit" style="height: 88%"></div>
+                <div class="bar" style="height: 38%"></div>
+                <div class="bar" style="height: 62%"></div>
+                <div class="bar" style="height: 50%"></div>
+                <div class="bar" style="height: 28%"></div>
+              </div>
+            </div>
+
+            <!-- Spending Overview (full width) -->
+            <div class="mock mock-spend reveal" style="--delay:160ms">
+              <div class="top">
+                <h4>Spending Overview <span style="color:var(--muted);font-weight:500;font-size:.78rem">ⓘ</span></h4>
+                <span class="toggle"><span class="on">This Month</span></span>
+              </div>
+              <div class="amount">£20,520.32 <span class="delta">+15% ↑</span></div>
+              <div class="label-row">
+                <span><strong>Spending Breakdown</strong></span>
+              </div>
+              <div class="breakdown">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+              </div>
+              <div class="legend">
+                <span>House Rent <strong style="color:var(--ink);margin-left:6px">£12,000.00</strong></span>
+                <span class="l2">Foods <strong style="color:var(--ink);margin-left:6px">£1,500.00</strong></span>
+                <span class="l3">Others <strong style="color:var(--ink);margin-left:6px">£800.00</strong></span>
+              </div>
+            </div>
+
+            <!-- Two stat tiles -->
+            <div class="mock-stats reveal" style="--delay:200ms">
+              <div class="mock-stat">
+                <div class="row"><span>Total Expenses</span><span class="arr" style="background:var(--bg-tint);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.7rem">↘</span></div>
+                <div class="num">£9,845.20</div>
+                <span class="delta dn">−10% ↓</span>
+                <div style="font-size:.78rem;color:var(--muted);margin-top:6px">Over last month</div>
+              </div>
+              <div class="mock-stat">
+                <div class="row"><span>Total Savings</span><span class="arr" style="background:var(--accent-soft);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;color:var(--accent-deep)">↗</span></div>
+                <div class="num">£18,420.75</div>
+                <span class="delta up">+22% ↑</span>
+                <div style="font-size:.78rem;color:var(--muted);margin-top:6px">Compared to last month</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- TRUST BAR -->
-      <section class="trustbar">
-        <div class="container trustbar-grid">
-          <div class="trust-item reveal">
-            <span class="ico">£</span>
-            <div>
-              <strong>Transparent pricing</strong>
-              No hidden fees, no surprises.
-            </div>
-          </div>
-          <div class="trust-item reveal" style="--delay: 60ms">
-            <span class="ico">✓</span>
-            <div>
-              <strong>No mis-selling</strong>
-              Only what genuinely fits your business.
-            </div>
-          </div>
-          <div class="trust-item reveal" style="--delay: 120ms">
-            <span class="ico">🇬🇧</span>
-            <div>
-              <strong>UK-based support</strong>
-              Local people who understand local trade.
-            </div>
-          </div>
-          <div class="trust-item reveal" style="--delay: 180ms">
-            <span class="ico">📞</span>
-            <div>
-              <strong>Real humans</strong>
-              No bots, no menus, no hold music.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHY PLEMMO -->
-      <section class="section">
+      <!-- ================== PAYMENT SHOWCASE ================== -->
+      <section class="fc-section">
         <div class="container">
-          <header class="section-head reveal">
-            <p class="section-label">Why Plemmo</p>
-            <h2 class="section-title">
-              One partner. Multiple solutions.<br />Zero hassle.
-            </h2>
-            <p class="section-sub">
-              Most business owners we meet are juggling six different providers —
-              one for the card machine, another for the till, someone else for
-              funding, and a fourth for the broadband. It's exhausting, expensive,
-              and nobody talks to each other. So we built Plemmo: every service
-              your business needs, one team that actually answers the phone.
-            </p>
-          </header>
-          <div class="why-grid">
-            <article class="why-card reveal">
-              <p class="num">01</p>
-              <h3>Smarter Payments</h3>
-              <p>
-                Card machines and EPOS systems with the lowest rates we can
-                negotiate from leading UK providers. Switch in 24–48 hours, no
-                downtime.
-              </p>
-            </article>
-            <article class="why-card reveal" style="--delay: 80ms">
-              <p class="num">02</p>
-              <h3>Funding That Fits</h3>
-              <p>
-                Access to a panel of trusted UK lenders. From £10,000 to
-                £500,000+, structured around how your business actually earns.
-              </p>
-            </article>
-            <article class="why-card reveal" style="--delay: 160ms">
-              <p class="num">03</p>
-              <h3>Everything Else</h3>
-              <p>
-                Signage, broadband, energy, call handling, EPOS, websites —
-                sorted by one team, on one bill, with one point of contact.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- SOLUTIONS -->
-      <section class="section section-soft">
-        <div class="container">
-          <header class="section-head reveal">
-            <p class="section-label">Our Solutions</p>
-            <h2 class="section-title">
-              Everything your business needs, sorted.
-            </h2>
-          </header>
-          <div class="solutions-grid">
-            <a class="solution reveal" href="card-machines.html">
-              <div class="solution-icon">💳</div>
-              <h3>Plemmo Pay</h3>
-              <p>Card machines &amp; payment processing, with the lowest UK rates from our panel.</p>
-              <span class="link-arrow">Learn more <span class="arr">→</span></span>
-            </a>
-            <a class="solution reveal" href="epos.html" style="--delay: 60ms">
-              <div class="solution-icon">🖥️</div>
-              <h3>Plemmo EPOS</h3>
-              <p>Smart till systems for retail &amp; hospitality — fast, modern, easy to learn.</p>
-              <span class="link-arrow">Learn more <span class="arr">→</span></span>
-            </a>
-            <a class="solution reveal" href="funding.html" style="--delay: 120ms">
-              <div class="solution-icon">💼</div>
-              <h3>Plemmo Funding</h3>
-              <p>Business loans &amp; merchant cash advances from £10K–£500K+, multiple lenders.</p>
-              <span class="link-arrow">Learn more <span class="arr">→</span></span>
-            </a>
-            <a class="solution reveal" href="signage.html" style="--delay: 180ms">
-              <div class="solution-icon">📺</div>
-              <h3>Plemmo Signage</h3>
-              <p>Digital displays, LED neon &amp; shopfronts that turn passers-by into customers.</p>
-              <span class="link-arrow">Learn more <span class="arr">→</span></span>
-            </a>
-            <a class="solution reveal" href="call-centre.html" style="--delay: 240ms">
-              <div class="solution-icon">📞</div>
-              <h3>Plemmo Connect</h3>
-              <p>Call handling &amp; business support so you never miss a customer again.</p>
-              <span class="link-arrow">Learn more <span class="arr">→</span></span>
-            </a>
-            <a class="solution reveal" href="utilities.html" style="--delay: 300ms">
-              <div class="solution-icon">⚡</div>
-              <h3>Plemmo Utilities</h3>
-              <p>Energy, broadband, water &amp; waste — switched, audited, never overpaying.</p>
-              <span class="link-arrow">Learn more <span class="arr">→</span></span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- CALCULATOR -->
-      <section class="section">
-        <div class="container">
-          <header class="section-head reveal">
-            <p class="section-label">2-minute saving check</p>
-            <h2 class="section-title">
-              Most businesses are paying too much. Are you?
-            </h2>
-            <p class="section-sub">
-              Card processing fees, energy bills, broadband contracts —
-              providers count on you being too busy to check. We're not. Answer
-              3 quick questions and we'll tell you in 2 minutes whether we can
-              save you money. No spam, no hard sell. If we can't beat your
-              current deal, we'll say so.
-            </p>
-          </header>
-
-          <div class="calc reveal" id="home-calc">
-            <div class="calc-inner">
-              <h3>Check my savings</h3>
-              <p class="lead">Three quick questions. Two minutes. Honest answer.</p>
-
-              <fieldset class="calc-step">
-                <legend><span class="num">1</span> What's your monthly turnover?</legend>
-                <div class="calc-options">
-                  <input type="radio" name="turnover" id="t1" value="1" /><label for="t1">£1k–£5k</label>
-                  <input type="radio" name="turnover" id="t2" value="2" /><label for="t2">£5k–£20k</label>
-                  <input type="radio" name="turnover" id="t3" value="3" /><label for="t3">£20k–£50k</label>
-                  <input type="radio" name="turnover" id="t4" value="4" /><label for="t4">£50k+</label>
+          <div class="fc-payshow reveal">
+            <div>
+              <p class="ey">Top Featured</p>
+              <h3>Built for your next-gen<br />of payment.</h3>
+              <p>Our platform delivers fast, secure, and seamless transactions for businesses of all sizes — countertop, portable or 4G.</p>
+              <div class="fc-payshow-stats">
+                <div>
+                  <div class="stat">Up to 2.9%</div>
+                  <span class="lbl">card top-up fees</span>
                 </div>
-              </fieldset>
-
-              <fieldset class="calc-step">
-                <legend><span class="num">2</span> Who's your current provider?</legend>
-                <div class="calc-options">
-                  <input type="radio" name="provider" id="p1" value="low" /><label for="p1">Low-cost (Square, SumUp)</label>
-                  <input type="radio" name="provider" id="p2" value="high" /><label for="p2">Bank / Worldpay / Barclaycard</label>
-                  <input type="radio" name="provider" id="p3" value="mid" /><label for="p3">Other</label>
-                  <input type="radio" name="provider" id="p4" value="unknown" /><label for="p4">Honestly, not sure</label>
+                <div>
+                  <div class="stat">Up to 1% / 0S</div>
+                  <span class="lbl">card transaction fee</span>
                 </div>
-              </fieldset>
-
-              <fieldset class="calc-step">
-                <legend><span class="num">3</span> What type of business do you run?</legend>
-                <div class="calc-options">
-                  <input type="radio" name="biz" id="b1" value="restaurant" /><label for="b1">Restaurant / Takeaway</label>
-                  <input type="radio" name="biz" id="b2" value="retail" /><label for="b2">Retail / Convenience</label>
-                  <input type="radio" name="biz" id="b3" value="salon" /><label for="b3">Salon / Barber</label>
-                  <input type="radio" name="biz" id="b4" value="mobile" /><label for="b4">Mobile trade</label>
-                  <input type="radio" name="biz" id="b5" value="other" /><label for="b5">Other</label>
+                <div>
+                  <div class="stat">Up to 40$</div>
+                  <span class="lbl">monthly card fee</span>
                 </div>
-              </fieldset>
-
-              <div class="calc-result">
-                <h4>Looks like we can save you money.</h4>
-                <span class="savings">£0 / month</span>
-                <p data-reco>—</p>
-                <p>That's a rough estimate based on what we typically save businesses like yours. The real number depends on your statement — and we'll show the maths line by line before you switch.</p>
-                <div class="calc-cta">
-                  <a class="btn btn-whatsapp" href="https://wa.me/447842088092?text=Hi%2C%20I%20just%20did%20the%20savings%20check%20on%20your%20site%20and%20want%20a%20full%20quote." target="_blank" rel="noopener">
-                    Lock in this saving on WhatsApp
-                    <span class="btn-arrow" aria-hidden="true">→</span>
-                  </a>
-                  <a class="btn btn-light" href="tel:07842088092">
-                    📞 Or call 07842 088092
-                  </a>
+              </div>
+              <a class="btn btn-primary" href="card-machines.html">
+                Apply now
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="phone">
+              <div class="phone-inner">
+                <div class="fc-phone-bar"><span>9:41</span><span>● ▴ ▮▮</span></div>
+                <div style="font-family:var(--font-display);font-weight:700;font-size:1.7rem;text-align:center;margin:14px 0 6px">£823<span style="color:var(--muted);font-size:1rem">.40</span></div>
+                <div style="font-size:.72rem;color:var(--muted);text-align:center;margin-bottom:14px">Charge customer</div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:auto">
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">1</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">2</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">3</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">4</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">5</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">6</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">7</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">8</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">9</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">.</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--bg-soft);border-radius:10px;font-weight:600">0</span>
+                  <span style="padding:14px 0;text-align:center;background:var(--accent);border-radius:10px;font-weight:700">✓</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <p class="hero-callnote reveal" style="margin-top: 18px; text-align: center;">
-            ✓ Switch in 24–48 hours &nbsp;·&nbsp; ✓ Zero downtime &nbsp;·&nbsp; ✓ No long contracts
+      <!-- ================== TESTIMONIALS ================== -->
+      <section class="fc-section fc-section-tint">
+        <div class="container">
+          <p class="fc-eyebrow reveal">Testimonial</p>
+          <h2 class="fc-headline reveal" style="--delay:60ms">
+            Built for clients<br />who demand results
+          </h2>
+          <p class="fc-subhead reveal" style="--delay:120ms">
+            Plemmo provides powerful business solutions that clients value for performance and reliability. Manage your business with confidence.
           </p>
-        </div>
-      </section>
-
-      <!-- WHY BUSINESSES SWITCH -->
-      <section class="section section-soft">
-        <div class="container">
-          <div class="split">
-            <div class="split-copy reveal">
-              <p class="section-label">Why businesses switch</p>
-              <h2 class="section-title">A better deal, and a real partner.</h2>
-              <p>
-                Most of our clients come to us tired — tired of being passed
-                around, tired of contracts they didn't read, tired of paying
-                more this quarter than last for the same service. Here's what
-                changes when you switch:
-              </p>
-            </div>
-            <div class="reveal" style="--delay: 80ms">
-              <ul class="bullets bullets-stacked">
-                <li>No contracts that lock you in — leave whenever it stops working.</li>
-                <li>No hidden fees — what we quote is what you pay.</li>
-                <li>Fast payouts — money in your account when you need it.</li>
-                <li>Real human support — UK office, real names, real answers.</li>
-                <li>One bill, one team, one set of contacts to remember.</li>
-              </ul>
-            </div>
+          <div class="fc-testimonials">
+            <article class="fc-testimonial reveal">
+              <div class="head">
+                <div class="av">RD</div>
+                <div class="who"><strong>Rahul Das</strong><span>Head of Marketing</span></div>
+                <span class="verified">Trustpilot</span>
+              </div>
+              <p>Plemmo has completely transformed how we manage business finances. The platform is simple, reliable, and helps us make smarter financial decisions every day.</p>
+              <div class="meta"><span>10:30 AM</span><span>December 6, 2025</span></div>
+            </article>
+            <article class="fc-testimonial reveal" style="--delay:80ms">
+              <div class="head">
+                <div class="av b">AK</div>
+                <div class="who"><strong>Ayesha Karim</strong><span>Sales Operations Lead</span></div>
+                <span class="verified">Trustpilot</span>
+              </div>
+              <p>We were looking for a secure and efficient financial solution, and Plemmo exceeded our expectations. Their tools make managing payments and tracking finances seamless.</p>
+              <div class="meta"><span>2:15 PM</span><span>December 5, 2025</span></div>
+            </article>
+            <article class="fc-testimonial reveal" style="--delay:160ms">
+              <div class="head">
+                <div class="av c">JM</div>
+                <div class="who"><strong>John Miller</strong><span>Growth Manager</span></div>
+                <span class="verified">Trustpilot</span>
+              </div>
+              <p>Since using Plemmo, our financial management has become more organised and transparent. It's a great solution for growing businesses.</p>
+              <div class="meta"><span>4:48 PM</span><span>December 4, 2025</span></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- VOWS -->
-      <section class="section">
+      <!-- ================== TRANSPARENT FEE ================== -->
+      <section class="fc-section">
         <div class="container">
-          <header class="section-head center reveal">
-            <p class="section-label">Our Vows</p>
-            <h2 class="section-title">The Plemmo promise.</h2>
-            <p class="section-sub" style="margin-inline:auto">
-              Five commitments we make to every business we work with.
-            </p>
-          </header>
-          <div class="vows reveal">
-            <div class="vow">
-              <div class="vow-num">01</div>
-              <h4>Trust &amp; Transparency</h4>
-              <p>Clear, honest pricing. We show you the maths.</p>
-            </div>
-            <div class="vow">
-              <div class="vow-num">02</div>
-              <h4>No Mis-Selling</h4>
-              <p>If a product won't help your business, we won't sell it. Simple.</p>
-            </div>
-            <div class="vow">
-              <div class="vow-num">03</div>
-              <h4>Local Support</h4>
-              <p>Help from people who understand independent UK businesses.</p>
-            </div>
-            <div class="vow">
-              <div class="vow-num">04</div>
-              <h4>Real Human Service</h4>
-              <p>A person picks up the phone. No menus. No script-readers.</p>
-            </div>
-            <div class="vow">
-              <div class="vow-num">05</div>
-              <h4>Business First</h4>
-              <p>Your growth is the only KPI we care about. If you grow, we grow.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FINAL CTA -->
-      <section class="section">
-        <div class="container">
-          <div class="cta-banner reveal">
-            <p class="section-label" style="color: rgba(255,255,255,.55);">Start a conversation</p>
-            <h2>Ready to stop juggling providers?</h2>
-            <p>
-              One conversation. One quote. One partner who actually picks up the
-              phone. Let's see what we can do for your business.
-            </p>
-            <div class="cta-banner-actions">
-              <a class="btn btn-whatsapp btn-lg" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20Plemmo%20quote." target="_blank" rel="noopener">
-                Get my free quote
+          <div class="fc-fee">
+            <div class="reveal">
+              <p class="ey">Transparent</p>
+              <h3>One transparent fee. <br />No hidden costs.</h3>
+              <p>Our simple and transparent pricing ensures there are no hidden charges, giving you complete confidence and control over your business costs.</p>
+              <a class="btn btn-primary" href="contact.html">
+                Apply now
                 <span class="btn-arrow" aria-hidden="true">→</span>
               </a>
-              <a class="btn btn-light btn-lg" href="tel:07842088092">📞 07842 088092</a>
-              <a class="btn btn-light btn-lg" href="mailto:hello@plemmo.co.uk">✉️ hello@plemmo.co.uk</a>
             </div>
-            <small>WhatsApp · Call · Email — whichever works for you.</small>
+            <div class="fc-fee-card reveal" style="--delay:80ms">
+              <div class="fc-fee-toggle">
+                <span class="on">Physical cards</span>
+                <span>Virtual cards</span>
+              </div>
+              <div class="fc-fee-row">
+                <div class="left">
+                  <div class="av">V</div>
+                  <div>
+                    <div class="num">•••• 7890</div>
+                    <div class="lbl">Card number</div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="amt">£88,200.00</div>
+                  <div class="date">03/25</div>
+                </div>
+              </div>
+              <div class="fc-fee-row">
+                <div class="left">
+                  <div class="av alt">M</div>
+                  <div>
+                    <div class="num">•••• 4990</div>
+                    <div class="lbl">Card number</div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="amt">£230.50</div>
+                  <div class="date">07/22</div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- ================== ARTICLES ================== -->
+      <section class="fc-section fc-section-tint">
+        <div class="container">
+          <p class="fc-eyebrow reveal">Articles</p>
+          <h2 class="fc-headline reveal" style="--delay:60ms">Our latest articles</h2>
+          <div class="fc-articles">
+            <a class="fc-article reveal" href="funding.html">
+              <div class="fc-article-img">
+                <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="a1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#f4dca0"/><stop offset="1" stop-color="#cfe07e"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="400" height="250" fill="url(#a1)"/>
+                  <circle cx="200" cy="115" r="55" fill="#f4cba0"/>
+                  <path d="M120 250 Q 200 170 280 250 Z" fill="#0a0d0a"/>
+                </svg>
+              </div>
+              <div class="fc-article-body">
+                <h4>How to prepare you business for funding</h4>
+                <p>Streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+              </div>
+            </a>
+            <a class="fc-article reveal" href="card-machines.html" style="--delay:80ms">
+              <div class="fc-article-img">
+                <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="a2" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#c9eb4a"/><stop offset="1" stop-color="#7ea951"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="400" height="250" fill="url(#a2)"/>
+                  <rect x="160" y="80" width="80" height="140" rx="14" fill="#0a0d0a"/>
+                  <rect x="166" y="86" width="68" height="128" rx="10" fill="#fff"/>
+                  <text x="200" y="160" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="20" fill="#0a0d0a">£823</text>
+                </svg>
+              </div>
+              <div class="fc-article-body">
+                <h4>Smart ways to use growth capital</h4>
+                <p>Streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+              </div>
+            </a>
+            <a class="fc-article reveal" href="epos.html" style="--delay:160ms">
+              <div class="fc-article-img">
+                <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="a3" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#e0bd92"/><stop offset="1" stop-color="#977358"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="400" height="250" fill="url(#a3)"/>
+                  <rect x="80" y="100" width="240" height="120" rx="10" fill="#0a0d0a"/>
+                  <rect x="92" y="112" width="216" height="80" rx="6" fill="#c9eb4a"/>
+                  <circle cx="100" cy="60" r="22" fill="#fbe5d6"/>
+                </svg>
+              </div>
+              <div class="fc-article-body">
+                <h4>Smart ways to use growth capital</h4>
+                <p>Streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== FINAL CTA ================== -->
+      <section class="fc-final">
+        <div class="fc-final-scene" aria-hidden="true">
+          <svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMax slice">
+            <defs>
+              <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f1f5e4"/>
+                <stop offset="1" stop-color="#d8e6b6"/>
+              </linearGradient>
+              <linearGradient id="hillF1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#9bbf6c"/>
+                <stop offset="1" stop-color="#6e9849"/>
+              </linearGradient>
+              <linearGradient id="hillF2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#577a37"/>
+                <stop offset="1" stop-color="#3a5421"/>
+              </linearGradient>
+            </defs>
+            <rect width="1600" height="600" fill="url(#sky2)"/>
+            <path d="M0 280 Q 300 220 600 260 T 1200 250 T 1600 260 V600 H0Z" fill="url(#hillF1)" opacity=".7"/>
+            <path d="M0 380 Q 250 320 600 360 T 1200 350 T 1600 380 V600 H0Z" fill="url(#hillF2)"/>
+            <!-- foreground flowers/grass strokes -->
+            <g opacity=".85">
+              <circle cx="80" cy="500" r="14" fill="#ff8a3d"/>
+              <circle cx="200" cy="540" r="10" fill="#ffb37a"/>
+              <circle cx="320" cy="510" r="12" fill="#c9eb4a"/>
+              <circle cx="500" cy="540" r="14" fill="#ff8a3d"/>
+              <circle cx="700" cy="520" r="10" fill="#fff" opacity=".8"/>
+              <circle cx="900" cy="530" r="12" fill="#ffb37a"/>
+              <circle cx="1100" cy="510" r="14" fill="#c9eb4a"/>
+              <circle cx="1280" cy="540" r="10" fill="#ff8a3d"/>
+              <circle cx="1450" cy="520" r="12" fill="#fff" opacity=".8"/>
+            </g>
+          </svg>
+        </div>
+        <div class="container">
+          <p class="fc-eyebrow reveal">Join Now</p>
+          <h2 class="reveal" style="--delay:60ms">Build smarter<br />decisions, faster</h2>
+          <p class="reveal" style="--delay:120ms">Plemmo helps you make smarter business decisions with real-time insights and clear data. Access the information you need.</p>
+          <div class="reveal" style="--delay:180ms">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/447842088092" target="_blank" rel="noopener">
+              Book a Demo
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="fc-final-spacer"></div>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ================== FOOTER ================== -->
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <div>
             <a class="brand" href="index.html"><span class="brand-mark">P</span>Plemmo</a>
-            <p class="footer-blurb">
-              The single toolkit for independent UK businesses — payments,
-              EPOS, funding, signage, utilities and support, all under one
-              roof.
-            </p>
+            <p class="footer-blurb">Technology Park<br />B-44 Maca Carlos Street<br />SW20 Barcelona</p>
             <div class="footer-contacts">
-              <a href="tel:07842088092">📞 07842 088092</a>
-              <a href="https://wa.me/447842088092" target="_blank" rel="noopener">💬 WhatsApp 07842 088092</a>
               <a href="mailto:hello@plemmo.co.uk">✉️ hello@plemmo.co.uk</a>
-              <span>📍 Flat 2, 40 Holyhead Road, Birmingham, B21 0LS</span>
+              <a href="tel:07842088092">📞 07842 088092</a>
             </div>
           </div>
           <div class="footer-cols">
             <div>
-              <h4>About</h4>
-              <a href="about.html">About Plemmo</a>
-              <a href="about.html#vows">Our Vows</a>
-              <a href="refer.html">Refer &amp; Earn</a>
-              <a href="contact.html">Contact</a>
-            </div>
-            <div>
-              <h4>Solutions</h4>
+              <h4>Products</h4>
               <a href="card-machines.html">Plemmo Pay</a>
-              <a href="epos.html">Plemmo EPOS</a>
-              <a href="funding.html">Plemmo Funding</a>
-              <a href="signage.html">Plemmo Signage</a>
-              <a href="call-centre.html">Plemmo Connect</a>
-              <a href="utilities.html">Plemmo Utilities</a>
+              <a href="epos.html">Payment links</a>
+              <a href="card-machines.html">Plug-ins</a>
+              <a href="utilities.html">Online tracking</a>
+              <a href="card-machines.html">Virtual cards</a>
+              <a href="signage.html">Personal access</a>
             </div>
             <div>
-              <h4>Industries</h4>
-              <a href="#">Restaurants &amp; Takeaways</a>
-              <a href="#">Retail &amp; Convenience</a>
-              <a href="#">Salons &amp; Barbers</a>
-              <a href="#">Mobile Traders</a>
-              <a href="#">Cafés</a>
+              <h4>Management</h4>
+              <a href="card-machines.html">Multi-currency wallet</a>
+              <a href="funding.html">Investments</a>
+              <a href="card-machines.html">Transfers</a>
+              <a href="utilities.html">Bills</a>
+              <a href="epos.html">eWallet</a>
+              <a href="contact.html">Cashback</a>
             </div>
             <div>
-              <h4>Get in touch</h4>
-              <a href="tel:07842088092">07842 088092</a>
-              <a href="https://wa.me/447842088092" target="_blank" rel="noopener">WhatsApp</a>
-              <a href="mailto:hello@plemmo.co.uk">hello@plemmo.co.uk</a>
-              <a href="contact.html">Contact form</a>
+              <h4>Social Media</h4>
+              <a href="#">Facebook</a>
+              <a href="#">LinkedIn</a>
+              <a href="#">Twitter</a>
+            </div>
+            <div>
+              <h4>Solution</h4>
+              <a href="funding.html">Financial</a>
+              <a href="about.html">Invest &amp; CEOs</a>
+              <a href="contact.html">Customer service</a>
+              <a href="about.html">Human resources</a>
             </div>
           </div>
         </div>
-
-        <p class="footer-legal">
-          Plemmo is a trading name of [Your Registered Company Name]. We act as
-          an independent business consultancy and credit broker. We are not a
-          lender or a direct payment acquirer. We introduce customers to a
-          hand-picked panel of providers and may receive a commission for these
-          introductions. All offers are subject to status and provider terms
-          &amp; conditions. Some support services (including call-handling
-          partners) operate from offshore locations including Pakistan.
-          Products, rates and offers are subject to change. E&amp;OE.
-        </p>
-
+        <p class="footer-legal">Plemmo is a trading name of [Your Registered Company Name]. We act as an independent business consultancy and credit broker. We are not a lender or a direct payment acquirer. We introduce customers to a hand-picked panel of providers and may receive a commission for these introductions. All offers are subject to status and provider terms &amp; conditions. Some support services (including call-handling partners) operate from offshore locations including Pakistan. Products, rates and offers are subject to change. E&amp;OE.</p>
         <div class="footer-base">
-          <span>© <span id="year">2026</span> Plemmo. All rights reserved.</span>
+          <span>Copyright 2026 — all rights reserved.</span>
           <div class="footer-base-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookie Policy</a>
-            <a href="#">Terms &amp; Conditions</a>
-            <a href="#">Complaints</a>
-            <a href="#">Modern Slavery Statement</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+            <a href="#">English</a>
           </div>
         </div>
       </div>
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a
-      class="whatsapp-fab"
-      href="https://wa.me/447842088092?text=Hi%2C%20I%27m%20enquiring%20from%20your%20website."
-      target="_blank"
-      rel="noopener"
-      aria-label="Chat on WhatsApp"
-    >
+    <a class="whatsapp-fab" href="https://wa.me/447842088092?text=Hi%2C%20I%27m%20enquiring%20from%20your%20website." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.06 17.59L3 21.5l4-1.05a10 10 0 0 0 4.95 1.27h.01a10 10 0 0 0 7.09-17.81zM12 19.85a8.31 8.31 0 0 1-4.23-1.16l-.3-.18-2.39.63.64-2.32-.2-.31A8.31 8.31 0 1 1 12 19.85zm4.55-6.21c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.16.25-.65.81-.79.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1.01 2.55.13.16 1.74 2.66 4.22 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31z"/></svg>
       <span class="label">Chat on WhatsApp</span>
     </a>
