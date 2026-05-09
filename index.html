@@ -1,461 +1,523 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lumen Studio — Brands & products people remember</title>
+    <title>Plemmo — Run your business. We'll run the rest.</title>
     <meta
       name="description"
-      content="Lumen is an independent design studio crafting brand identities, digital products, and websites for ambitious teams."
+      content="Card machines, EPOS, business funding, signage, broadband and energy — all under one roof. One partner. One call. Real human help. UK-based."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%23f59e0b'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff5c39'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Manrope,sans-serif' font-weight='800' font-size='18' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E"
     />
   </head>
   <body>
-    <header class="nav" id="nav">
-      <div class="container nav-inner">
-        <a class="logo" href="#top" aria-label="Lumen Studio home">
-          <span class="logo-mark" aria-hidden="true"></span>
-          <span class="logo-word">Lumen</span>
-          <span class="logo-suffix">Studio</span>
+    <!-- Top bar -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div>
+          📞 <strong>07842 088092</strong> — a real person picks up. Always.
+        </div>
+        <div class="topbar-tags">
+          <span>Transparent pricing</span>
+          <span>UK-based support</span>
+          <span>No mis-selling</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Plemmo home">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          Plemmo
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="#work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#about">Studio</a>
-          <a href="#journal">Journal</a>
+          <a href="card-machines.html">Card Machines</a>
+          <a href="epos.html">EPOS</a>
+          <a href="funding.html">Funding</a>
+          <a href="signage.html">Signage</a>
+          <a href="utilities.html">Utilities</a>
+          <a href="call-centre.html">Call Handling</a>
+          <a href="about.html">About</a>
         </nav>
-        <a class="btn btn-primary nav-cta" href="#contact">
-          Start a project
-          <span class="btn-arrow" aria-hidden="true">→</span>
-        </a>
-        <button
-          class="nav-toggle"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <span></span><span></span><span></span>
-        </button>
+        <div class="nav-actions">
+          <a class="nav-call" href="tel:07842088092" aria-label="Call Plemmo">
+            📞 07842 088092
+          </a>
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote%20from%20Plemmo."
+            target="_blank"
+            rel="noopener"
+          >
+            Free Quote
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <button
+            class="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
       </div>
-      <div class="mobile-menu" id="mobile-menu" hidden>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">Studio</a>
-        <a href="#journal">Journal</a>
-        <a class="btn btn-primary" href="#contact">Start a project</a>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="card-machines.html">Card Machines</a>
+        <a href="epos.html">EPOS</a>
+        <a href="funding.html">Funding</a>
+        <a href="signage.html">Signage</a>
+        <a href="utilities.html">Utilities</a>
+        <a href="call-centre.html">Call Handling</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary" href="https://wa.me/447842088092" target="_blank" rel="noopener">
+          Get Free Quote on WhatsApp
+        </a>
       </div>
     </header>
 
-    <main id="top">
+    <main>
       <!-- HERO -->
       <section class="hero">
         <div class="hero-bg" aria-hidden="true">
-          <span class="orb orb-a"></span>
-          <span class="orb orb-b"></span>
-          <span class="orb orb-c"></span>
-          <div class="grain"></div>
+          <span class="blob blob-a"></span>
+          <span class="blob blob-b"></span>
         </div>
         <div class="container hero-inner">
-          <p class="eyebrow reveal">
-            <span class="dot"></span> Independent design studio · est. 2019
+          <p class="hero-eyebrow reveal">
+            <span class="dot"></span> One partner. One call. Real human help.
           </p>
-          <h1 class="hero-title reveal" style="--delay: 60ms">
-            Brands and products
-            <span class="italic">people&nbsp;remember.</span>
+          <h1 class="reveal" style="--delay: 60ms">
+            Run your business.<br />
+            <span class="accent">We'll run the rest.</span>
           </h1>
           <p class="hero-sub reveal" style="--delay: 140ms">
-            Lumen is a small studio of designers and engineers helping ambitious
-            teams ship identities, websites, and digital products that feel
-            unmistakably theirs.
+            From card payments and EPOS systems to funding, signage, broadband
+            and energy — Plemmo brings every essential business service under
+            one roof. One partner. One call. Real human help.
           </p>
           <div class="hero-cta reveal" style="--delay: 220ms">
-            <a class="btn btn-primary btn-lg" href="#work">
-              See selected work
+            <a
+              class="btn btn-whatsapp btn-lg"
+              href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.06 17.59L3 21.5l4-1.05a10 10 0 0 0 4.95 1.27h.01a10 10 0 0 0 7.09-17.81zM12 19.85a8.31 8.31 0 0 1-4.23-1.16l-.3-.18-2.39.63.64-2.32-.2-.31A8.31 8.31 0 1 1 12 19.85zm4.55-6.21c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.16.25-.65.81-.79.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1.01 2.55.13.16 1.74 2.66 4.22 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31z"/></svg>
+              Get a Free Quote on WhatsApp
               <span class="btn-arrow" aria-hidden="true">→</span>
             </a>
-            <a class="btn btn-ghost btn-lg" href="#contact">
-              Book an intro call
+            <a class="btn btn-ghost btn-lg" href="tel:07842088092">
+              📞 Call 07842 088092
             </a>
           </div>
-          <dl class="hero-stats reveal" style="--delay: 320ms">
-            <div>
-              <dt>Founded</dt>
-              <dd>2019</dd>
-            </div>
-            <div>
-              <dt>Projects shipped</dt>
-              <dd><span data-count="124">0</span>+</dd>
-            </div>
-            <div>
-              <dt>Avg. NPS</dt>
-              <dd><span data-count="92">0</span></dd>
-            </div>
-            <div>
-              <dt>Based in</dt>
-              <dd>Brooklyn · Lisbon</dd>
-            </div>
-          </dl>
+          <p class="hero-callnote reveal" style="--delay: 280ms">
+            Or call us on
+            <a href="tel:07842088092">07842 088092</a> — a real person picks up.
+            Always.
+          </p>
         </div>
       </section>
 
-      <!-- MARQUEE -->
-      <section class="marquee" aria-label="Clients">
-        <div class="marquee-track">
-          <ul class="marquee-list">
-            <li>Northwind</li>
-            <li>Helio</li>
-            <li>Pebble&nbsp;&amp;&nbsp;Co</li>
-            <li>Vector</li>
-            <li>Foundry</li>
-            <li>Quill</li>
-            <li>Atlas Health</li>
-            <li>Mosaic</li>
-            <li>Field Notes</li>
-            <li>Cumulus</li>
-          </ul>
-          <ul class="marquee-list" aria-hidden="true">
-            <li>Northwind</li>
-            <li>Helio</li>
-            <li>Pebble&nbsp;&amp;&nbsp;Co</li>
-            <li>Vector</li>
-            <li>Foundry</li>
-            <li>Quill</li>
-            <li>Atlas Health</li>
-            <li>Mosaic</li>
-            <li>Field Notes</li>
-            <li>Cumulus</li>
-          </ul>
+      <!-- TRUST BAR -->
+      <section class="trustbar">
+        <div class="container trustbar-grid">
+          <div class="trust-item reveal">
+            <span class="ico">£</span>
+            <div>
+              <strong>Transparent pricing</strong>
+              No hidden fees, no surprises.
+            </div>
+          </div>
+          <div class="trust-item reveal" style="--delay: 60ms">
+            <span class="ico">✓</span>
+            <div>
+              <strong>No mis-selling</strong>
+              Only what genuinely fits your business.
+            </div>
+          </div>
+          <div class="trust-item reveal" style="--delay: 120ms">
+            <span class="ico">🇬🇧</span>
+            <div>
+              <strong>UK-based support</strong>
+              Local people who understand local trade.
+            </div>
+          </div>
+          <div class="trust-item reveal" style="--delay: 180ms">
+            <span class="ico">📞</span>
+            <div>
+              <strong>Real humans</strong>
+              No bots, no menus, no hold music.
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- SERVICES -->
-      <section class="section" id="services">
+      <!-- WHY PLEMMO -->
+      <section class="section">
         <div class="container">
           <header class="section-head reveal">
-            <p class="section-label">— Services</p>
+            <p class="section-label">Why Plemmo</p>
             <h2 class="section-title">
-              A focused team for the work that&nbsp;matters.
+              One partner. Multiple solutions.<br />Zero hassle.
             </h2>
             <p class="section-sub">
-              We embed with founders and product leaders end-to-end — from the
-              first sketch to the launch announcement.
+              Most business owners we meet are juggling six different providers —
+              one for the card machine, another for the till, someone else for
+              funding, and a fourth for the broadband. It's exhausting, expensive,
+              and nobody talks to each other. So we built Plemmo: every service
+              your business needs, one team that actually answers the phone.
             </p>
           </header>
-          <div class="services-grid">
-            <article class="service reveal">
-              <div class="service-num">01</div>
-              <h3>Brand Identity</h3>
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <p class="num">01</p>
+              <h3>Smarter Payments</h3>
               <p>
-                Naming, visual systems, and editorial direction that hold up
-                across every surface — from app icon to airport billboard.
+                Card machines and EPOS systems with the lowest rates we can
+                negotiate from leading UK providers. Switch in 24–48 hours, no
+                downtime.
               </p>
-              <ul class="service-tags">
-                <li>Strategy</li>
-                <li>Logo &amp; mark</li>
-                <li>Typography</li>
-                <li>Guidelines</li>
-              </ul>
             </article>
-            <article class="service reveal" style="--delay: 80ms">
-              <div class="service-num">02</div>
-              <h3>Product Design</h3>
+            <article class="why-card reveal" style="--delay: 80ms">
+              <p class="num">02</p>
+              <h3>Funding That Fits</h3>
               <p>
-                End-to-end product work: research, flows, interaction, and
-                pixel-perfect interfaces ready to hand off to engineering.
+                Access to a panel of trusted UK lenders. From £10,000 to
+                £500,000+, structured around how your business actually earns.
               </p>
-              <ul class="service-tags">
-                <li>UX research</li>
-                <li>Design systems</li>
-                <li>Prototyping</li>
-                <li>Motion</li>
-              </ul>
             </article>
-            <article class="service reveal" style="--delay: 160ms">
-              <div class="service-num">03</div>
-              <h3>Websites</h3>
+            <article class="why-card reveal" style="--delay: 160ms">
+              <p class="num">03</p>
+              <h3>Everything Else</h3>
               <p>
-                Marketing sites and storefronts built in-house — fast, accessible,
-                and easy for your team to update long after we&rsquo;re gone.
+                Signage, broadband, energy, call handling, EPOS, websites —
+                sorted by one team, on one bill, with one point of contact.
               </p>
-              <ul class="service-tags">
-                <li>Art direction</li>
-                <li>Front-end</li>
-                <li>CMS</li>
-                <li>Performance</li>
-              </ul>
-            </article>
-            <article class="service reveal" style="--delay: 240ms">
-              <div class="service-num">04</div>
-              <h3>Strategy</h3>
-              <p>
-                Workshops and advisory for teams between rounds, rebrands, or
-                pivots — clarifying the story before pixels move.
-              </p>
-              <ul class="service-tags">
-                <li>Positioning</li>
-                <li>Naming</li>
-                <li>Workshops</li>
-                <li>Audit</li>
-              </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- WORK -->
-      <section class="section section-tinted" id="work">
+      <!-- SOLUTIONS -->
+      <section class="section section-soft">
         <div class="container">
           <header class="section-head reveal">
-            <p class="section-label">— Selected work</p>
-            <h2 class="section-title">A few recent things we&rsquo;re proud of.</h2>
-          </header>
-          <div class="work-grid">
-            <a class="work-card reveal" href="#" data-tone="amber">
-              <div class="work-visual">
-                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="400" height="280" fill="#f6e7c8" />
-                  <circle cx="280" cy="140" r="92" fill="#f59e0b" />
-                  <circle cx="120" cy="140" r="60" fill="#1f1d1a" />
-                  <rect x="60" y="220" width="280" height="6" fill="#1f1d1a" />
-                </svg>
-              </div>
-              <div class="work-meta">
-                <h3>Helio — solar storage rebrand</h3>
-                <p>Identity · Web · Packaging</p>
-              </div>
-            </a>
-            <a class="work-card reveal" href="#" data-tone="ink" style="--delay: 60ms">
-              <div class="work-visual">
-                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="400" height="280" fill="#1f1d1a" />
-                  <path d="M0 200 Q100 120 200 180 T400 160 V280 H0Z" fill="#f59e0b" />
-                  <text x="32" y="80" fill="#fbf7f0" font-family="Fraunces" font-size="44" font-style="italic">Quill</text>
-                </svg>
-              </div>
-              <div class="work-meta">
-                <h3>Quill — writing app for teams</h3>
-                <p>Product design · Design system</p>
-              </div>
-            </a>
-            <a class="work-card reveal" href="#" data-tone="cream" style="--delay: 120ms">
-              <div class="work-visual">
-                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="400" height="280" fill="#fbf7f0" />
-                  <g stroke="#1f1d1a" stroke-width="2" fill="none">
-                    <circle cx="200" cy="140" r="40" />
-                    <circle cx="200" cy="140" r="80" />
-                    <circle cx="200" cy="140" r="120" />
-                  </g>
-                  <circle cx="200" cy="140" r="14" fill="#f59e0b" />
-                </svg>
-              </div>
-              <div class="work-meta">
-                <h3>Atlas Health — patient platform</h3>
-                <p>UX research · Product · Web</p>
-              </div>
-            </a>
-            <a class="work-card reveal" href="#" data-tone="sage" style="--delay: 180ms">
-              <div class="work-visual">
-                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="400" height="280" fill="#dde7d8" />
-                  <rect x="40" y="40" width="120" height="200" fill="#1f1d1a" />
-                  <rect x="180" y="100" width="180" height="140" fill="#f59e0b" />
-                  <rect x="180" y="40" width="180" height="48" fill="#1f1d1a" />
-                </svg>
-              </div>
-              <div class="work-meta">
-                <h3>Foundry — DTC coffee storefront</h3>
-                <p>Brand · Web · Packaging</p>
-              </div>
-            </a>
-            <a class="work-card reveal" href="#" data-tone="ink" style="--delay: 240ms">
-              <div class="work-visual">
-                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="400" height="280" fill="#27241f" />
-                  <g fill="#fbf7f0">
-                    <rect x="40" y="60" width="160" height="8" />
-                    <rect x="40" y="84" width="120" height="8" />
-                    <rect x="40" y="108" width="200" height="8" />
-                  </g>
-                  <circle cx="320" cy="180" r="60" fill="#f59e0b" />
-                </svg>
-              </div>
-              <div class="work-meta">
-                <h3>Vector — analytics for ops teams</h3>
-                <p>Product design · Marketing site</p>
-              </div>
-            </a>
-            <a class="work-card reveal" href="#" data-tone="amber" style="--delay: 300ms">
-              <div class="work-visual">
-                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <rect width="400" height="280" fill="#fde9c7" />
-                  <polygon points="200,40 360,240 40,240" fill="#1f1d1a" />
-                  <circle cx="200" cy="170" r="28" fill="#fbf7f0" />
-                </svg>
-              </div>
-              <div class="work-meta">
-                <h3>Northwind — outdoor apparel</h3>
-                <p>Identity · Editorial · Web</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="container about-grid">
-          <div class="about-copy reveal">
-            <p class="section-label">— The studio</p>
+            <p class="section-label">Our Solutions</p>
             <h2 class="section-title">
-              Small by design. Senior on every&nbsp;project.
+              Everything your business needs, sorted.
             </h2>
-            <p>
-              We&rsquo;re a studio of nine — designers, engineers, and a writer —
-              working from Brooklyn and Lisbon. We don&rsquo;t hand projects off
-              to juniors and we don&rsquo;t take on more than we can ship well.
-            </p>
-            <p>
-              Our clients range from seed-stage founders to public companies, but
-              the work always begins the same way: a conversation about what
-              you&rsquo;re trying to build, and why it matters.
-            </p>
-            <a class="link-arrow" href="#contact">
-              Read our process <span aria-hidden="true">→</span>
+          </header>
+          <div class="solutions-grid">
+            <a class="solution reveal" href="card-machines.html">
+              <div class="solution-icon">💳</div>
+              <h3>Plemmo Pay</h3>
+              <p>Card machines &amp; payment processing, with the lowest UK rates from our panel.</p>
+              <span class="link-arrow">Learn more <span class="arr">→</span></span>
+            </a>
+            <a class="solution reveal" href="epos.html" style="--delay: 60ms">
+              <div class="solution-icon">🖥️</div>
+              <h3>Plemmo EPOS</h3>
+              <p>Smart till systems for retail &amp; hospitality — fast, modern, easy to learn.</p>
+              <span class="link-arrow">Learn more <span class="arr">→</span></span>
+            </a>
+            <a class="solution reveal" href="funding.html" style="--delay: 120ms">
+              <div class="solution-icon">💼</div>
+              <h3>Plemmo Funding</h3>
+              <p>Business loans &amp; merchant cash advances from £10K–£500K+, multiple lenders.</p>
+              <span class="link-arrow">Learn more <span class="arr">→</span></span>
+            </a>
+            <a class="solution reveal" href="signage.html" style="--delay: 180ms">
+              <div class="solution-icon">📺</div>
+              <h3>Plemmo Signage</h3>
+              <p>Digital displays, LED neon &amp; shopfronts that turn passers-by into customers.</p>
+              <span class="link-arrow">Learn more <span class="arr">→</span></span>
+            </a>
+            <a class="solution reveal" href="call-centre.html" style="--delay: 240ms">
+              <div class="solution-icon">📞</div>
+              <h3>Plemmo Connect</h3>
+              <p>Call handling &amp; business support so you never miss a customer again.</p>
+              <span class="link-arrow">Learn more <span class="arr">→</span></span>
+            </a>
+            <a class="solution reveal" href="utilities.html" style="--delay: 300ms">
+              <div class="solution-icon">⚡</div>
+              <h3>Plemmo Utilities</h3>
+              <p>Energy, broadband, water &amp; waste — switched, audited, never overpaying.</p>
+              <span class="link-arrow">Learn more <span class="arr">→</span></span>
             </a>
           </div>
-          <ul class="about-stats">
-            <li class="reveal">
-              <span class="stat-num"><span data-count="9">0</span></span>
-              <span class="stat-label">people on the team</span>
-            </li>
-            <li class="reveal" style="--delay: 80ms">
-              <span class="stat-num"><span data-count="34">0</span></span>
-              <span class="stat-label">countries we&rsquo;ve shipped in</span>
-            </li>
-            <li class="reveal" style="--delay: 160ms">
-              <span class="stat-num"><span data-count="6">0</span>w</span>
-              <span class="stat-label">average engagement</span>
-            </li>
-            <li class="reveal" style="--delay: 240ms">
-              <span class="stat-num">A+</span>
-              <span class="stat-label">accessibility, every launch</span>
-            </li>
-          </ul>
         </div>
       </section>
 
-      <!-- TESTIMONIAL -->
-      <section class="section testimonial-section">
+      <!-- CALCULATOR -->
+      <section class="section">
         <div class="container">
-          <figure class="testimonial reveal">
-            <blockquote>
-              <p>
-                <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-                Lumen rebuilt our brand and our marketing site in eight weeks.
-                Conversion was up 41% the month we launched, but the part we
-                still talk about is how
-                <em>recognizable</em> the work feels — like it could only have
-                been ours.
-              </p>
-            </blockquote>
-            <figcaption>
-              <div class="avatar" aria-hidden="true">MR</div>
-              <div>
-                <strong>Maya Reyes</strong>
-                <span>VP Marketing, Helio</span>
+          <header class="section-head reveal">
+            <p class="section-label">2-minute saving check</p>
+            <h2 class="section-title">
+              Most businesses are paying too much. Are you?
+            </h2>
+            <p class="section-sub">
+              Card processing fees, energy bills, broadband contracts —
+              providers count on you being too busy to check. We're not. Answer
+              3 quick questions and we'll tell you in 2 minutes whether we can
+              save you money. No spam, no hard sell. If we can't beat your
+              current deal, we'll say so.
+            </p>
+          </header>
+
+          <div class="calc reveal" id="home-calc">
+            <div class="calc-inner">
+              <h3>Check my savings</h3>
+              <p class="lead">Three quick questions. Two minutes. Honest answer.</p>
+
+              <fieldset class="calc-step">
+                <legend><span class="num">1</span> What's your monthly turnover?</legend>
+                <div class="calc-options">
+                  <input type="radio" name="turnover" id="t1" value="1" /><label for="t1">£1k–£5k</label>
+                  <input type="radio" name="turnover" id="t2" value="2" /><label for="t2">£5k–£20k</label>
+                  <input type="radio" name="turnover" id="t3" value="3" /><label for="t3">£20k–£50k</label>
+                  <input type="radio" name="turnover" id="t4" value="4" /><label for="t4">£50k+</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="calc-step">
+                <legend><span class="num">2</span> Who's your current provider?</legend>
+                <div class="calc-options">
+                  <input type="radio" name="provider" id="p1" value="low" /><label for="p1">Low-cost (Square, SumUp)</label>
+                  <input type="radio" name="provider" id="p2" value="high" /><label for="p2">Bank / Worldpay / Barclaycard</label>
+                  <input type="radio" name="provider" id="p3" value="mid" /><label for="p3">Other</label>
+                  <input type="radio" name="provider" id="p4" value="unknown" /><label for="p4">Honestly, not sure</label>
+                </div>
+              </fieldset>
+
+              <fieldset class="calc-step">
+                <legend><span class="num">3</span> What type of business do you run?</legend>
+                <div class="calc-options">
+                  <input type="radio" name="biz" id="b1" value="restaurant" /><label for="b1">Restaurant / Takeaway</label>
+                  <input type="radio" name="biz" id="b2" value="retail" /><label for="b2">Retail / Convenience</label>
+                  <input type="radio" name="biz" id="b3" value="salon" /><label for="b3">Salon / Barber</label>
+                  <input type="radio" name="biz" id="b4" value="mobile" /><label for="b4">Mobile trade</label>
+                  <input type="radio" name="biz" id="b5" value="other" /><label for="b5">Other</label>
+                </div>
+              </fieldset>
+
+              <div class="calc-result">
+                <h4>Looks like we can save you money.</h4>
+                <span class="savings">£0 / month</span>
+                <p data-reco>—</p>
+                <p>That's a rough estimate based on what we typically save businesses like yours. The real number depends on your statement — and we'll show the maths line by line before you switch.</p>
+                <div class="calc-cta">
+                  <a class="btn btn-whatsapp" href="https://wa.me/447842088092?text=Hi%2C%20I%20just%20did%20the%20savings%20check%20on%20your%20site%20and%20want%20a%20full%20quote." target="_blank" rel="noopener">
+                    Lock in this saving on WhatsApp
+                    <span class="btn-arrow" aria-hidden="true">→</span>
+                  </a>
+                  <a class="btn btn-light" href="tel:07842088092">
+                    📞 Or call 07842 088092
+                  </a>
+                </div>
               </div>
-            </figcaption>
-          </figure>
+            </div>
+          </div>
+
+          <p class="hero-callnote reveal" style="margin-top: 18px; text-align: center;">
+            ✓ Switch in 24–48 hours &nbsp;·&nbsp; ✓ Zero downtime &nbsp;·&nbsp; ✓ No long contracts
+          </p>
         </div>
       </section>
 
-      <!-- CONTACT / CTA -->
-      <section class="section cta-section" id="contact">
-        <div class="container cta-inner reveal">
-          <p class="section-label">— Start a project</p>
-          <h2 class="cta-title">
-            Have something in&nbsp;mind?<br />
-            <span class="italic">Let&rsquo;s make it.</span>
-          </h2>
-          <p class="cta-sub">
-            We take on a handful of new engagements each quarter. Tell us a
-            little about the work and we&rsquo;ll get back within two business
-            days.
-          </p>
-          <form class="cta-form" novalidate>
-            <label class="visually-hidden" for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="you@company.com"
-              required
-              autocomplete="email"
-            />
-            <button class="btn btn-primary btn-lg" type="submit">
-              Send intro
-              <span class="btn-arrow" aria-hidden="true">→</span>
-            </button>
-            <p class="form-msg" role="status" aria-live="polite"></p>
-          </form>
-          <p class="cta-alt">
-            Prefer email? <a href="mailto:hello@lumen.studio">hello@lumen.studio</a>
-          </p>
+      <!-- WHY BUSINESSES SWITCH -->
+      <section class="section section-soft">
+        <div class="container">
+          <div class="split">
+            <div class="split-copy reveal">
+              <p class="section-label">Why businesses switch</p>
+              <h2 class="section-title">A better deal, and a real partner.</h2>
+              <p>
+                Most of our clients come to us tired — tired of being passed
+                around, tired of contracts they didn't read, tired of paying
+                more this quarter than last for the same service. Here's what
+                changes when you switch:
+              </p>
+            </div>
+            <div class="reveal" style="--delay: 80ms">
+              <ul class="bullets bullets-stacked">
+                <li>No contracts that lock you in — leave whenever it stops working.</li>
+                <li>No hidden fees — what we quote is what you pay.</li>
+                <li>Fast payouts — money in your account when you need it.</li>
+                <li>Real human support — UK office, real names, real answers.</li>
+                <li>One bill, one team, one set of contacts to remember.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VOWS -->
+      <section class="section">
+        <div class="container">
+          <header class="section-head center reveal">
+            <p class="section-label">Our Vows</p>
+            <h2 class="section-title">The Plemmo promise.</h2>
+            <p class="section-sub" style="margin-inline:auto">
+              Five commitments we make to every business we work with.
+            </p>
+          </header>
+          <div class="vows reveal">
+            <div class="vow">
+              <div class="vow-num">01</div>
+              <h4>Trust &amp; Transparency</h4>
+              <p>Clear, honest pricing. We show you the maths.</p>
+            </div>
+            <div class="vow">
+              <div class="vow-num">02</div>
+              <h4>No Mis-Selling</h4>
+              <p>If a product won't help your business, we won't sell it. Simple.</p>
+            </div>
+            <div class="vow">
+              <div class="vow-num">03</div>
+              <h4>Local Support</h4>
+              <p>Help from people who understand independent UK businesses.</p>
+            </div>
+            <div class="vow">
+              <div class="vow-num">04</div>
+              <h4>Real Human Service</h4>
+              <p>A person picks up the phone. No menus. No script-readers.</p>
+            </div>
+            <div class="vow">
+              <div class="vow-num">05</div>
+              <h4>Business First</h4>
+              <p>Your growth is the only KPI we care about. If you grow, we grow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner reveal">
+            <p class="section-label" style="color: rgba(255,255,255,.55);">Start a conversation</p>
+            <h2>Ready to stop juggling providers?</h2>
+            <p>
+              One conversation. One quote. One partner who actually picks up the
+              phone. Let's see what we can do for your business.
+            </p>
+            <div class="cta-banner-actions">
+              <a class="btn btn-whatsapp btn-lg" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20Plemmo%20quote." target="_blank" rel="noopener">
+                Get my free quote
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-light btn-lg" href="tel:07842088092">📞 07842 088092</a>
+              <a class="btn btn-light btn-lg" href="mailto:hello@plemmo.co.uk">✉️ hello@plemmo.co.uk</a>
+            </div>
+            <small>WhatsApp · Call · Email — whichever works for you.</small>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <a class="logo" href="#top" aria-label="Lumen Studio home">
-            <span class="logo-mark" aria-hidden="true"></span>
-            <span class="logo-word">Lumen</span>
-            <span class="logo-suffix">Studio</span>
-          </a>
-          <p>Independent design studio.<br />Brooklyn · Lisbon.</p>
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html"><span class="brand-mark">P</span>Plemmo</a>
+            <p class="footer-blurb">
+              The single toolkit for independent UK businesses — payments,
+              EPOS, funding, signage, utilities and support, all under one
+              roof.
+            </p>
+            <div class="footer-contacts">
+              <a href="tel:07842088092">📞 07842 088092</a>
+              <a href="https://wa.me/447842088092" target="_blank" rel="noopener">💬 WhatsApp 07842 088092</a>
+              <a href="mailto:hello@plemmo.co.uk">✉️ hello@plemmo.co.uk</a>
+              <span>📍 Flat 2, 40 Holyhead Road, Birmingham, B21 0LS</span>
+            </div>
+          </div>
+          <div class="footer-cols">
+            <div>
+              <h4>About</h4>
+              <a href="about.html">About Plemmo</a>
+              <a href="about.html#vows">Our Vows</a>
+              <a href="refer.html">Refer &amp; Earn</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <div>
+              <h4>Solutions</h4>
+              <a href="card-machines.html">Plemmo Pay</a>
+              <a href="epos.html">Plemmo EPOS</a>
+              <a href="funding.html">Plemmo Funding</a>
+              <a href="signage.html">Plemmo Signage</a>
+              <a href="call-centre.html">Plemmo Connect</a>
+              <a href="utilities.html">Plemmo Utilities</a>
+            </div>
+            <div>
+              <h4>Industries</h4>
+              <a href="#">Restaurants &amp; Takeaways</a>
+              <a href="#">Retail &amp; Convenience</a>
+              <a href="#">Salons &amp; Barbers</a>
+              <a href="#">Mobile Traders</a>
+              <a href="#">Cafés</a>
+            </div>
+            <div>
+              <h4>Get in touch</h4>
+              <a href="tel:07842088092">07842 088092</a>
+              <a href="https://wa.me/447842088092" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="mailto:hello@plemmo.co.uk">hello@plemmo.co.uk</a>
+              <a href="contact.html">Contact form</a>
+            </div>
+          </div>
         </div>
-        <div class="footer-cols">
-          <div>
-            <h4>Studio</h4>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#journal">Journal</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <div>
-            <h4>Elsewhere</h4>
-            <a href="#">Are.na</a>
-            <a href="#">Dribbble</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Read.cv</a>
-          </div>
-          <div>
-            <h4>Newsletter</h4>
-            <p>One short note a month. No spam.</p>
-            <form class="footer-form" novalidate>
-              <input type="email" placeholder="Email" aria-label="Email" />
-              <button type="submit" aria-label="Subscribe">→</button>
-            </form>
+
+        <p class="footer-legal">
+          Plemmo is a trading name of [Your Registered Company Name]. We act as
+          an independent business consultancy and credit broker. We are not a
+          lender or a direct payment acquirer. We introduce customers to a
+          hand-picked panel of providers and may receive a commission for these
+          introductions. All offers are subject to status and provider terms
+          &amp; conditions. Some support services (including call-handling
+          partners) operate from offshore locations including Pakistan.
+          Products, rates and offers are subject to change. E&amp;OE.
+        </p>
+
+        <div class="footer-base">
+          <span>© <span id="year">2026</span> Plemmo. All rights reserved.</span>
+          <div class="footer-base-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Complaints</a>
+            <a href="#">Modern Slavery Statement</a>
           </div>
         </div>
-      </div>
-      <div class="container footer-base">
-        <span>© <span id="year">2026</span> Lumen Studio LLC</span>
-        <span>Made with care in NYC &amp; LIS</span>
       </div>
     </footer>
+
+    <!-- Floating WhatsApp -->
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/447842088092?text=Hi%2C%20I%27m%20enquiring%20from%20your%20website."
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.06 17.59L3 21.5l4-1.05a10 10 0 0 0 4.95 1.27h.01a10 10 0 0 0 7.09-17.81zM12 19.85a8.31 8.31 0 0 1-4.23-1.16l-.3-.18-2.39.63.64-2.32-.2-.31A8.31 8.31 0 1 1 12 19.85zm4.55-6.21c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.16.25-.65.81-.79.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1.01 2.55.13.16 1.74 2.66 4.22 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31z"/></svg>
+      <span class="label">Chat on WhatsApp</span>
+    </a>
 
     <script src="script.js" defer></script>
   </body>
