@@ -7,45 +7,139 @@
     <meta name="description" content="Card payments, EPOS, funding, signage, broadband and energy — all under one roof. Real human help. Save up to 40% and uncover hidden savings instantly." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0d0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Manrope,sans-serif' font-weight='800' font-size='18' fill='%23c9eb4a'%3EP%3C/text%3E%3C/svg%3E" />
   </head>
   <body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+
     <main>
       <!-- ================== HERO ================== -->
       <section class="fc-hero">
-        <!-- Landscape SVG -->
+        <!-- Landscape scene -->
         <div class="fc-hero-scene" aria-hidden="true">
           <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
             <defs>
               <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#eef2e2" />
-                <stop offset="1" stop-color="#cfdfa8" />
+                <stop offset="0" stop-color="#f3f6e6" />
+                <stop offset=".55" stop-color="#dfe9be" />
+                <stop offset="1" stop-color="#bbd087" />
               </linearGradient>
-              <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#9bbf6c" />
-                <stop offset="1" stop-color="#7ea951" />
+              <radialGradient id="sun" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#fff5cc" />
+                <stop offset=".4" stop-color="#fae6a0" stop-opacity=".7" />
+                <stop offset="1" stop-color="#f4cf60" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#9ec172" />
+                <stop offset="1" stop-color="#7ba551" />
               </linearGradient>
-              <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0" stop-color="#6e9849" />
-                <stop offset="1" stop-color="#577a37" />
+                <stop offset="1" stop-color="#4f7430" />
               </linearGradient>
-              <linearGradient id="hill3" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#4d6b2e" />
-                <stop offset="1" stop-color="#3a5421" />
+              <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3f5a23" />
+                <stop offset="1" stop-color="#243815" />
               </linearGradient>
-              <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0" /></filter>
+              <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+                <stop offset="1" stop-color="#f5f7e7" stop-opacity=".4"/>
+              </linearGradient>
+              <filter id="grainh"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .05 0" /></filter>
             </defs>
+
+            <!-- Sky -->
             <rect width="1600" height="900" fill="url(#sky)" />
-            <!-- distant hills -->
-            <path d="M0 540 Q 200 460 400 510 T 800 500 T 1200 480 T 1600 510 V900 H0Z" fill="url(#hill1)" opacity=".75" />
-            <!-- mid hills -->
-            <path d="M0 640 Q 250 540 500 600 T 1000 590 T 1600 620 V900 H0Z" fill="url(#hill2)" />
-            <!-- foreground hill -->
-            <path d="M0 760 Q 300 660 700 720 T 1300 740 T 1600 720 V900 H0Z" fill="url(#hill3)" />
-            <!-- subtle grain -->
-            <rect width="1600" height="900" filter="url(#grain)" />
+
+            <!-- Sun glow -->
+            <g class="sun-glow">
+              <circle cx="1180" cy="240" r="280" fill="url(#sun)" />
+              <circle cx="1180" cy="240" r="60" fill="#fff5cc" />
+            </g>
+
+            <!-- Birds -->
+            <g class="bird">
+              <path d="M0 0 q8 -6 16 0 q8 -6 16 0" stroke="#0a0d0a" stroke-width="2.4" fill="none" stroke-linecap="round" transform="translate(0 220)" />
+            </g>
+            <g class="bird bird-2">
+              <path d="M0 0 q6 -5 12 0 q6 -5 12 0" stroke="#0a0d0a" stroke-width="2" fill="none" stroke-linecap="round" transform="translate(0 280)" />
+            </g>
+            <g class="bird bird-3">
+              <path d="M0 0 q5 -4 10 0 q5 -4 10 0" stroke="#0a0d0a" stroke-width="1.8" fill="none" stroke-linecap="round" transform="translate(0 180)" />
+            </g>
+
+            <!-- Clouds -->
+            <g class="cloud" transform="translate(0 140)">
+              <ellipse cx="60" cy="0" rx="80" ry="18" fill="url(#cloud)" />
+              <ellipse cx="120" cy="-8" rx="60" ry="20" fill="url(#cloud)" />
+            </g>
+            <g class="cloud cloud-2" transform="translate(0 220)">
+              <ellipse cx="40" cy="0" rx="60" ry="14" fill="url(#cloud)" />
+              <ellipse cx="100" cy="-6" rx="50" ry="18" fill="url(#cloud)" />
+            </g>
+            <g class="cloud cloud-3" transform="translate(0 320)">
+              <ellipse cx="20" cy="0" rx="46" ry="12" fill="url(#cloud)" />
+            </g>
+
+            <!-- Distant hills with parallax -->
+            <g data-parallax=".3" data-parallax-scroll="0.05">
+              <path d="M0 540 Q 220 460 440 510 T 880 500 T 1320 480 T 1600 510 V900 H0Z" fill="url(#hillFar)" opacity=".82" />
+              <!-- houses on far hill -->
+              <g transform="translate(420 488)">
+                <rect x="0" y="0" width="22" height="20" fill="#dde6ba" />
+                <polygon points="-2,0 24,0 11,-12" fill="#7d3f30" />
+              </g>
+              <g transform="translate(560 478)">
+                <rect x="0" y="0" width="18" height="16" fill="#e3edc4" />
+                <polygon points="-2,0 20,0 9,-10" fill="#7d3f30" />
+              </g>
+            </g>
+
+            <!-- Mid hills -->
+            <g data-parallax=".5" data-parallax-scroll="0.1">
+              <path d="M0 640 Q 250 520 520 600 T 1040 590 T 1600 620 V900 H0Z" fill="url(#hillMid)" />
+              <!-- trees -->
+              <g transform="translate(180 600)" fill="#3a5421">
+                <ellipse cx="0" cy="-16" rx="18" ry="22" /><rect x="-3" y="0" width="6" height="14" fill="#2b3f18" />
+              </g>
+              <g transform="translate(950 590)" fill="#3a5421">
+                <ellipse cx="0" cy="-14" rx="14" ry="18" /><rect x="-3" y="0" width="6" height="12" fill="#2b3f18" />
+              </g>
+              <g transform="translate(1320 600)" fill="#3a5421">
+                <ellipse cx="0" cy="-18" rx="20" ry="24" /><rect x="-3" y="0" width="6" height="14" fill="#2b3f18" />
+              </g>
+            </g>
+
+            <!-- Foreground hill with grass tufts -->
+            <g data-parallax=".75" data-parallax-scroll="0.15">
+              <path d="M0 760 Q 320 660 720 720 T 1320 740 T 1600 720 V900 H0Z" fill="url(#hillNear)" />
+              <!-- flowers/grass -->
+              <g fill="#fff" opacity=".8">
+                <circle cx="120" cy="800" r="4" />
+                <circle cx="240" cy="820" r="3" />
+                <circle cx="380" cy="790" r="4" />
+                <circle cx="640" cy="810" r="3" />
+                <circle cx="820" cy="790" r="4" />
+                <circle cx="1040" cy="820" r="3" />
+                <circle cx="1280" cy="800" r="4" />
+              </g>
+              <g fill="#c9eb4a" opacity=".85">
+                <circle cx="180" cy="810" r="5" />
+                <circle cx="500" cy="810" r="6" />
+                <circle cx="900" cy="820" r="5" />
+                <circle cx="1180" cy="800" r="6" />
+              </g>
+              <g fill="#ff8a3d" opacity=".9">
+                <circle cx="320" cy="820" r="5" />
+                <circle cx="760" cy="810" r="5" />
+                <circle cx="1380" cy="820" r="5" />
+              </g>
+            </g>
+
+            <!-- Grain -->
+            <rect width="1600" height="900" filter="url(#grainh)" opacity=".7" />
           </svg>
         </div>
 
@@ -60,53 +154,42 @@
               <a href="about.html">About</a>
               <a href="contact.html">Contact</a>
             </div>
-            <a class="btn btn-dark" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener">Get a Quote</a>
-            <button class="fc-nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+            <a class="btn btn-dark magnetic" data-magnetic=".25" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener"><span class="magnetic-inner">Get a Quote</span></a>
+            <button class="fc-nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
           </div>
         </nav>
 
         <div class="container fc-hero-inner">
-          <h1 class="reveal">
-            Run your business.<br />
-            Uncover savings <span class="accent">instantly.</span>
-          </h1>
-          <p class="fc-hero-sub reveal" style="--delay:80ms">
-            Centralise card payments, track spending live, and cut admin by up to
-            40% — all from one trusted UK partner. Real humans on the phone, always.
+          <h1 class="kinetic" data-text="Run your business. {script:Uncover} {italic:savings} instantly."></h1>
+
+          <p class="fc-hero-sub reveal-up" style="--delay:600ms">
+            Centralise card payments, track spending live, and cut admin by up
+            to <strong>40%</strong> — all from one trusted UK partner. Real
+            humans on the phone. Always.
           </p>
-          <div class="fc-hero-cta reveal" style="--delay:160ms">
-            <a class="btn btn-primary btn-lg" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener">
-              Get a Free Quote
-              <span class="btn-arrow" aria-hidden="true">→</span>
+          <div class="fc-hero-cta reveal-up" style="--delay:760ms">
+            <a class="btn btn-primary btn-lg glow magnetic" data-magnetic=".4" href="https://wa.me/447842088092?text=Hi%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener">
+              <span class="magnetic-inner">Get a Free Quote <span class="btn-arrow" aria-hidden="true">→</span></span>
             </a>
+            <a class="btn btn-ghost btn-lg" href="tel:07842088092">📞 07842 088092</a>
           </div>
 
-          <!-- Floating cards -->
+          <!-- Floating cards with 3D tilt + parallax -->
           <div class="fc-floats" aria-hidden="true">
-            <!-- Visa Gold card -->
-            <div class="fc-card fc-card-pay">
+            <div class="fc-card fc-card-pay" data-tilt="14" data-parallax=".4">
               <div class="pay-card">
-                <div class="pay-net">
-                  <span>Visa Gold</span>
-                  <span style="font-weight:700;letter-spacing:0">VISA</span>
-                </div>
+                <div class="pay-net"><span>Visa Gold</span><span style="font-weight:700;letter-spacing:0">VISA</span></div>
                 <div class="pay-num">•••• 4982 ••3471</div>
                 <div class="pay-name">Plemmo Payware</div>
               </div>
-              <div class="pay-meta">
-                <span>£12,300.8 <strong>USD</strong></span>
-              </div>
+              <div class="pay-meta"><span>£12,300.8 <strong>USD</strong></span></div>
               <div class="pay-link">See payment details →</div>
             </div>
 
-            <!-- Phone -->
-            <div class="fc-card fc-card-phone">
+            <div class="fc-card fc-card-phone" data-tilt="8" data-parallax=".2">
               <div class="fc-phone-screen">
-                <div class="fc-phone-bar">
-                  <span>9:41</span>
-                  <span>● ▴ ▮▮</span>
-                </div>
-                <div class="fc-phone-amount">£1,184.20</div>
+                <div class="fc-phone-bar"><span>9:41</span><span>● ▴ ▮▮</span></div>
+                <div class="fc-phone-amount">£1,184.<span style="color:var(--muted);font-size:1rem">20</span></div>
                 <div class="fc-phone-label">Tap to charge customer</div>
                 <div class="fc-phone-keys">
                   <span>1</span><span>2</span><span>3</span>
@@ -117,11 +200,10 @@
               </div>
             </div>
 
-            <!-- Cash flow card -->
-            <div class="fc-card fc-card-cash">
+            <div class="fc-card fc-card-cash" data-tilt="14" data-parallax=".4">
               <div class="cash-row">
                 <span class="visa-mark">VISA</span>
-                <span style="font-size:.72rem;color:var(--muted)">Today</span>
+                <span style="font-size:.72rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px"><span class="notif-dot"></span>Live</span>
               </div>
               <div class="cash-amount">£35,700.40</div>
               <div style="font-size:.72rem;color:var(--muted);margin-top:2px">7-day card volume</div>
@@ -130,13 +212,36 @@
               </div>
             </div>
           </div>
+
+          <span class="hero-whisper" aria-hidden="true">↓ scroll</span>
+        </div>
+      </section>
+
+      <!-- ================== BIG MARQUEE ================== -->
+      <section class="bigmarq" aria-label="What we offer">
+        <div class="bigmarq-track">
+          <div class="bigmarq-row">
+            <span>Card payments</span><span class="blob"></span>
+            <span class="outline">EPOS systems</span><span class="blob"></span>
+            <span>Business funding</span><span class="blob"></span>
+            <span class="outline">Signage</span><span class="blob"></span>
+            <span>Utilities</span><span class="blob"></span>
+            <span class="outline">Call handling</span><span class="blob"></span>
+            <span>Card payments</span><span class="blob"></span>
+            <span class="outline">EPOS systems</span><span class="blob"></span>
+            <span>Business funding</span><span class="blob"></span>
+            <span class="outline">Signage</span><span class="blob"></span>
+            <span>Utilities</span><span class="blob"></span>
+            <span class="outline">Call handling</span><span class="blob"></span>
+          </div>
         </div>
       </section>
 
       <!-- ================== LOGO STRIP ================== -->
       <section class="fc-logos">
         <div class="container">
-          <div class="fc-logos-track">
+          <p class="fc-eyebrow reveal-up" style="margin-bottom:18px">Trusted by independent UK businesses</p>
+          <div class="fc-logos-track reveal-up" style="--delay:120ms">
             <span style="font-weight:600">⊞ Microsoft</span>
             <span>Google</span>
             <span style="font-style:italic">stripe</span>
@@ -147,79 +252,241 @@
         </div>
       </section>
 
+      <!-- ================== BIG STATS ================== -->
+      <section style="padding: 0 24px;">
+        <div class="container">
+          <div class="bigstat-row">
+            <div class="bigstat-cell reveal-up">
+              <div class="bigstat" data-to="40" data-suffix="%">0%</div>
+              <div class="lbl">Average admin time saved</div>
+            </div>
+            <div class="bigstat-cell reveal-up" style="--delay:80ms">
+              <div class="bigstat" data-to="250" data-prefix="£" data-suffix="+">£0</div>
+              <div class="lbl">Saved per month on card fees</div>
+            </div>
+            <div class="bigstat-cell reveal-up" style="--delay:160ms">
+              <div class="bigstat" data-to="48" data-suffix="h">0h</div>
+              <div class="lbl">From quote to live, typically</div>
+            </div>
+            <div class="bigstat-cell reveal-up" style="--delay:240ms">
+              <div class="bigstat" data-to="92">0</div>
+              <div class="lbl">Average client NPS</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ================== EFFECTIVE MANAGEMENT ================== -->
       <section class="fc-section">
         <div class="container">
-          <p class="fc-eyebrow reveal">Services</p>
-          <h2 class="fc-headline reveal" style="--delay:60ms">
+          <p class="fc-eyebrow reveal-up">Services</p>
+          <h2 class="fc-headline under reveal-up" style="--delay:60ms">
             Effective business management<br />can empower your team
           </h2>
           <div class="fc-feature">
-            <div class="fc-feature-img reveal">
+            <div class="fc-feature-img reveal-up" data-tilt="6">
               <svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
                 <defs>
-                  <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0" stop-color="#7ea951" />
+                  <linearGradient id="bgF" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#a8c97c" />
                     <stop offset="1" stop-color="#3a5421" />
                   </linearGradient>
+                  <radialGradient id="rim" cx=".5" cy="0" r="1">
+                    <stop offset="0" stop-color="#fff5cc" stop-opacity=".5"/>
+                    <stop offset="1" stop-color="#fff5cc" stop-opacity="0"/>
+                  </radialGradient>
                 </defs>
-                <rect width="600" height="600" fill="url(#bg2)" />
-                <!-- soft hill in background -->
-                <path d="M0 380 Q 150 320 300 360 T 600 340 V600 H0Z" fill="#577a37" />
-                <path d="M0 460 Q 200 380 400 420 T 600 410 V600 H0Z" fill="#3e5524" />
-                <!-- two figures (silhouettes) -->
-                <g transform="translate(200 180)">
-                  <!-- person 1 in yellow jacket -->
-                  <ellipse cx="60" cy="60" rx="38" ry="40" fill="#f4dca0" />
-                  <path d="M-10 110 Q 60 90 130 110 V260 Q 60 270 -10 260 Z" fill="#cfe07e" />
-                  <ellipse cx="60" cy="55" rx="6" ry="3" fill="#0a0d0a" />
-                  <ellipse cx="48" cy="50" rx="3" ry="3" fill="#0a0d0a" />
-                  <ellipse cx="72" cy="50" rx="3" ry="3" fill="#0a0d0a" />
+                <rect width="600" height="600" fill="url(#bgF)"/>
+                <rect width="600" height="600" fill="url(#rim)"/>
+                <!-- background hills -->
+                <path d="M0 380 Q 150 320 300 360 T 600 340 V600 H0Z" fill="#577a37"/>
+                <path d="M0 460 Q 200 380 400 420 T 600 410 V600 H0Z" fill="#3e5524"/>
+                <!-- two figures -->
+                <g transform="translate(180 180)">
+                  <!-- person 1 yellow jacket -->
+                  <ellipse cx="60" cy="60" rx="38" ry="42" fill="#f6d99b"/>
+                  <path d="M-14 110 Q 60 88 132 110 V300 Q 60 320 -14 300 Z" fill="#dbeb8e"/>
+                  <path d="M0 130 L60 220 L120 130 L130 200 L100 320 L20 320 L-10 200 Z" fill="#cbe07a"/>
+                  <ellipse cx="60" cy="56" rx="6" ry="3" fill="#0a0d0a"/>
+                  <ellipse cx="48" cy="50" rx="3" ry="3" fill="#0a0d0a"/>
+                  <ellipse cx="72" cy="50" rx="3" ry="3" fill="#0a0d0a"/>
+                  <path d="M28 32 q0 -22 32 -22 q32 0 32 22" fill="#5a3a1f"/>
                 </g>
                 <g transform="translate(330 200)">
-                  <!-- person 2 -->
-                  <ellipse cx="60" cy="60" rx="36" ry="38" fill="#e0bd92" />
-                  <path d="M-10 110 Q 60 90 130 110 V260 Q 60 270 -10 260 Z" fill="#0a0d0a" />
-                  <ellipse cx="60" cy="55" rx="5" ry="2.5" fill="#0a0d0a" />
-                  <ellipse cx="48" cy="50" rx="2.5" ry="2.5" fill="#0a0d0a" />
-                  <ellipse cx="72" cy="50" rx="2.5" ry="2.5" fill="#0a0d0a" />
+                  <ellipse cx="60" cy="60" rx="36" ry="40" fill="#e6bd92"/>
+                  <path d="M-14 110 Q 60 90 132 110 V300 Q 60 320 -14 300 Z" fill="#0a0d0a"/>
+                  <path d="M-4 130 L60 220 L124 130 L132 200 L100 320 L24 320 L-12 200 Z" fill="#1a1a18"/>
+                  <ellipse cx="60" cy="55" rx="5" ry="2.5" fill="#0a0d0a"/>
+                  <ellipse cx="48" cy="50" rx="2.5" ry="2.5" fill="#0a0d0a"/>
+                  <ellipse cx="72" cy="50" rx="2.5" ry="2.5" fill="#0a0d0a"/>
+                  <path d="M30 30 q0 -24 30 -24 q30 0 30 24" fill="#0a0d0a"/>
+                </g>
+                <!-- light flecks -->
+                <g fill="#fff" opacity=".5">
+                  <circle cx="80" cy="100" r="2"/>
+                  <circle cx="500" cy="80" r="3"/>
+                  <circle cx="380" cy="140" r="2"/>
+                  <circle cx="200" cy="60" r="2"/>
                 </g>
               </svg>
             </div>
-            <div class="reveal" style="--delay:80ms">
+            <div class="reveal-up" style="--delay:80ms">
               <h3>Plemmo unifies everything <br />on one platform.</h3>
               <ul class="fc-feature-list">
-                <li>Centralised payment data</li>
-                <li>Live cash-flow monitoring</li>
-                <li>Accurate, real-time reports</li>
+                <li>Centralised payment data, in real time</li>
+                <li>Live cash-flow monitoring across stores</li>
+                <li>Accurate, beautifully formatted reports</li>
+                <li>One contact for every essential service</li>
               </ul>
-              <a class="btn btn-primary" href="card-machines.html">
-                Get Started
-                <span class="btn-arrow" aria-hidden="true">→</span>
+              <a class="btn btn-primary magnetic" data-magnetic=".35" href="card-machines.html">
+                <span class="magnetic-inner">Get Started <span class="btn-arrow" aria-hidden="true">→</span></span>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ================== DASHBOARD MOCKUPS ================== -->
+      <!-- ================== STICKY SCROLL SHOWCASE ================== -->
       <section class="fc-section fc-section-tint">
         <div class="container">
-          <p class="fc-eyebrow reveal">Top Featured</p>
-          <h2 class="fc-headline reveal" style="--delay:60ms">
-            Effective business management<br />can empower your team
+          <p class="fc-eyebrow reveal-up">How it fits together</p>
+          <h2 class="fc-headline under reveal-up" style="--delay:60ms;margin-bottom:48px">
+            Three tools your business will <em style="color:var(--accent-deep)">actually</em> use
           </h2>
-          <p class="fc-subhead reveal" style="--delay:120ms">
-            Plemmo helps independent UK businesses make smarter decisions, control expenses, and plan for sustainable growth.
+        </div>
+        <div class="container sticky-show">
+          <div class="sticky-show-inner">
+            <div class="copy">
+              <div class="indicators">
+                <div class="indicator is-active">
+                  <span class="num">01</span>
+                  <div>
+                    <strong style="display:block">Plemmo Pay</strong>
+                    <span style="font-size:.85rem;opacity:.7">Card machines, low rates, real payouts.</span>
+                  </div>
+                </div>
+                <div class="indicator">
+                  <span class="num">02</span>
+                  <div>
+                    <strong style="display:block">Plemmo EPOS</strong>
+                    <span style="font-size:.85rem;opacity:.7">A till that thinks ahead of your team.</span>
+                  </div>
+                </div>
+                <div class="indicator">
+                  <span class="num">03</span>
+                  <div>
+                    <strong style="display:block">Plemmo Funding</strong>
+                    <span style="font-size:.85rem;opacity:.7">£10K–£500K from a panel of UK lenders.</span>
+                  </div>
+                </div>
+              </div>
+              <a class="link-arrow" href="card-machines.html" style="margin-top:24px;display:inline-flex">Explore all solutions <span class="arr">→</span></a>
+            </div>
+
+            <div class="panels">
+              <!-- Panel 1: Pay -->
+              <div class="panel is-active" style="background: linear-gradient(135deg, #c9eb4a, #7ea951)">
+                <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">
+                  <defs>
+                    <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#0a0d0a"/><stop offset="1" stop-color="#1d2b3d"/>
+                    </linearGradient>
+                  </defs>
+                  <!-- big card -->
+                  <g transform="translate(80 90) rotate(-8 230 140)">
+                    <rect width="460" height="280" rx="24" fill="url(#cardG)"/>
+                    <text x="32" y="64" fill="#c9eb4a" font-family="Manrope" font-weight="800" font-size="22" letter-spacing="2">PLEMMO PAY</text>
+                    <text x="32" y="180" fill="#fff" font-family="Manrope" font-weight="600" font-size="32" letter-spacing="6">•••• 4982</text>
+                    <text x="32" y="240" fill="#dadada" font-family="Inter" font-size="16">CARDHOLDER · UK</text>
+                    <circle cx="380" cy="220" r="34" fill="#c9eb4a" opacity=".85"/>
+                    <circle cx="410" cy="220" r="34" fill="#fff" opacity=".55"/>
+                  </g>
+                  <!-- chip -->
+                  <g transform="translate(380 320)">
+                    <rect width="72" height="56" rx="10" fill="#fff" opacity=".9"/>
+                    <rect x="8" y="8" width="56" height="40" rx="6" fill="#0a0d0a" opacity=".15"/>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Panel 2: EPOS -->
+              <div class="panel" style="background: linear-gradient(135deg, #1d2b3d, #0a0d0a)">
+                <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">
+                  <!-- till body -->
+                  <rect x="120" y="80" width="360" height="280" rx="18" fill="#1a1a17"/>
+                  <rect x="138" y="98" width="324" height="244" rx="10" fill="#f7f7f1"/>
+                  <!-- screen content -->
+                  <rect x="158" y="120" width="200" height="14" rx="3" fill="#0a0d0a"/>
+                  <rect x="158" y="146" width="160" height="10" rx="3" fill="#a8aca0"/>
+                  <g transform="translate(158 180)">
+                    <rect width="120" height="40" rx="6" fill="#c9eb4a"/>
+                    <text x="14" y="26" font-family="Manrope" font-weight="700" font-size="16" fill="#0a0d0a">£12.50</text>
+                  </g>
+                  <g transform="translate(290 180)">
+                    <rect width="120" height="40" rx="6" fill="#f0f0e8"/>
+                    <text x="14" y="26" font-family="Manrope" font-weight="700" font-size="16" fill="#0a0d0a">£8.20</text>
+                  </g>
+                  <rect x="158" y="232" width="290" height="10" rx="3" fill="#e0e0d8"/>
+                  <rect x="158" y="252" width="240" height="10" rx="3" fill="#e0e0d8"/>
+                  <rect x="158" y="282" width="290" height="44" rx="8" fill="#0a0d0a"/>
+                  <text x="180" y="312" font-family="Manrope" font-weight="700" font-size="18" fill="#c9eb4a">Charge £20.70 →</text>
+                  <!-- stand -->
+                  <rect x="240" y="370" width="120" height="14" fill="#1a1a17"/>
+                  <rect x="180" y="384" width="240" height="20" rx="4" fill="#1a1a17"/>
+                </svg>
+              </div>
+
+              <!-- Panel 3: Funding -->
+              <div class="panel" style="background: linear-gradient(135deg, #f7f7f1, #ddead8)">
+                <svg viewBox="0 0 600 480" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%">
+                  <!-- card stack -->
+                  <g transform="translate(110 90)">
+                    <rect width="380" height="80" rx="14" fill="#fff" stroke="#e5e6df"/>
+                    <circle cx="40" cy="40" r="18" fill="#c9eb4a"/>
+                    <text x="76" y="36" font-family="Manrope" font-weight="700" font-size="16" fill="#0a0d0a">iwoca · £25,000</text>
+                    <text x="76" y="56" font-family="Inter" font-size="13" fill="#6a716c">12 months · APR 9.4%</text>
+                    <text x="316" y="46" font-family="Manrope" font-weight="800" font-size="20" fill="#0a0d0a">→</text>
+                  </g>
+                  <g transform="translate(110 190)">
+                    <rect width="380" height="80" rx="14" fill="#0a0d0a"/>
+                    <circle cx="40" cy="40" r="18" fill="#c9eb4a"/>
+                    <text x="76" y="36" font-family="Manrope" font-weight="700" font-size="16" fill="#fff">YouLend · £40,000</text>
+                    <text x="76" y="56" font-family="Inter" font-size="13" fill="#a8aca0">Revenue-based · flexible</text>
+                    <text x="316" y="46" font-family="Manrope" font-weight="800" font-size="20" fill="#c9eb4a">→</text>
+                  </g>
+                  <g transform="translate(110 290)">
+                    <rect width="380" height="80" rx="14" fill="#fff" stroke="#e5e6df"/>
+                    <circle cx="40" cy="40" r="18" fill="#ff8a3d"/>
+                    <text x="76" y="36" font-family="Manrope" font-weight="700" font-size="16" fill="#0a0d0a">Funding Circle · £75,000</text>
+                    <text x="76" y="56" font-family="Inter" font-size="13" fill="#6a716c">36 months · APR 7.1%</text>
+                    <text x="316" y="46" font-family="Manrope" font-weight="800" font-size="20" fill="#0a0d0a">→</text>
+                  </g>
+                  <!-- floating bubble -->
+                  <g transform="translate(440 50)">
+                    <circle r="34" fill="#c9eb4a"/>
+                    <text x="0" y="6" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="14" fill="#0a0d0a">3 offers</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== DASHBOARD MOCKUPS ================== -->
+      <section class="fc-section">
+        <div class="container">
+          <p class="fc-eyebrow reveal-up">Top featured</p>
+          <h2 class="fc-headline under reveal-up" style="--delay:60ms">
+            Beautifully clear <em style="color:var(--accent-deep)">numbers,</em> live.
+          </h2>
+          <p class="fc-subhead reveal-up" style="--delay:120ms">
+            Every transaction, every stat, every decision in one elegant view.
           </p>
 
           <div class="fc-dash">
-            <!-- Investments / Stocks card -->
-            <div class="mock mock-investments reveal">
-              <div class="mock-row">
-                <span>Investments</span>
-                <span class="arr">↗</span>
-              </div>
+            <div class="mock mock-investments grad-border spotlight reveal-up" data-tilt="3">
+              <div class="mock-row"><span>Investments</span><span class="arr">↗</span></div>
               <div class="stocks">
                 <div class="stock"><span>Tesla</span><span class="pct">+1.2%</span></div>
                 <div class="stock"><span>£ Stock</span><span class="pct">−0.8%</span></div>
@@ -232,40 +499,32 @@
               <div class="big-amount">£4,263.<span class="small">90</span></div>
             </div>
 
-            <!-- Cash flow card -->
-            <div class="mock mock-cashflow reveal" style="--delay:80ms">
+            <div class="mock mock-cashflow chart-anim spotlight reveal-up" data-tilt="3" style="--delay:80ms">
               <div class="mock-row">
                 <span>Cash Flow</span>
                 <span class="toggle"><span class="on">Monthly</span><span>Yearly</span></span>
               </div>
               <div class="total">£342,323.44</div>
               <div class="chart">
-                <div class="bar" style="height: 30%"></div>
-                <div class="bar" style="height: 55%"></div>
-                <div class="bar" style="height: 42%"></div>
-                <div class="bar lit" style="height: 88%"></div>
-                <div class="bar" style="height: 38%"></div>
-                <div class="bar" style="height: 62%"></div>
-                <div class="bar" style="height: 50%"></div>
-                <div class="bar" style="height: 28%"></div>
+                <div class="bar" style="height: 30%;--i:0"></div>
+                <div class="bar" style="height: 55%;--i:1"></div>
+                <div class="bar" style="height: 42%;--i:2"></div>
+                <div class="bar lit" style="height: 88%;--i:3"></div>
+                <div class="bar" style="height: 38%;--i:4"></div>
+                <div class="bar" style="height: 62%;--i:5"></div>
+                <div class="bar" style="height: 50%;--i:6"></div>
+                <div class="bar" style="height: 28%;--i:7"></div>
               </div>
             </div>
 
-            <!-- Spending Overview (full width) -->
-            <div class="mock mock-spend reveal" style="--delay:160ms">
+            <div class="mock mock-spend spotlight reveal-up" style="--delay:160ms">
               <div class="top">
                 <h4>Spending Overview <span style="color:var(--muted);font-weight:500;font-size:.78rem">ⓘ</span></h4>
                 <span class="toggle"><span class="on">This Month</span></span>
               </div>
               <div class="amount">£20,520.32 <span class="delta">+15% ↑</span></div>
-              <div class="label-row">
-                <span><strong>Spending Breakdown</strong></span>
-              </div>
-              <div class="breakdown">
-                <div class="b1"></div>
-                <div class="b2"></div>
-                <div class="b3"></div>
-              </div>
+              <div class="label-row"><span><strong>Spending Breakdown</strong></span></div>
+              <div class="breakdown"><div class="b1"></div><div class="b2"></div><div class="b3"></div></div>
               <div class="legend">
                 <span>House Rent <strong style="color:var(--ink);margin-left:6px">£12,000.00</strong></span>
                 <span class="l2">Foods <strong style="color:var(--ink);margin-left:6px">£1,500.00</strong></span>
@@ -273,15 +532,14 @@
               </div>
             </div>
 
-            <!-- Two stat tiles -->
-            <div class="mock-stats reveal" style="--delay:200ms">
-              <div class="mock-stat">
+            <div class="mock-stats reveal-up" style="--delay:200ms">
+              <div class="mock-stat spotlight" data-tilt="2">
                 <div class="row"><span>Total Expenses</span><span class="arr" style="background:var(--bg-tint);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.7rem">↘</span></div>
                 <div class="num">£9,845.20</div>
                 <span class="delta dn">−10% ↓</span>
                 <div style="font-size:.78rem;color:var(--muted);margin-top:6px">Over last month</div>
               </div>
-              <div class="mock-stat">
+              <div class="mock-stat spotlight" data-tilt="2">
                 <div class="row"><span>Total Savings</span><span class="arr" style="background:var(--accent-soft);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.7rem;color:var(--accent-deep)">↗</span></div>
                 <div class="num">£18,420.75</div>
                 <span class="delta up">+22% ↑</span>
@@ -295,28 +553,18 @@
       <!-- ================== PAYMENT SHOWCASE ================== -->
       <section class="fc-section">
         <div class="container">
-          <div class="fc-payshow reveal">
+          <div class="fc-payshow reveal-up" data-tilt="3">
             <div>
-              <p class="ey">Top Featured</p>
-              <h3>Built for your next-gen<br />of payment.</h3>
-              <p>Our platform delivers fast, secure, and seamless transactions for businesses of all sizes — countertop, portable or 4G.</p>
+              <p class="ey">Top featured</p>
+              <h3>Built for your <em style="color:var(--accent-deep)">next-gen</em><br />of payment.</h3>
+              <p>Our platform delivers fast, secure, and seamless transactions for businesses of all sizes — countertop, portable or 4G. Switch in 24–48 hours.</p>
               <div class="fc-payshow-stats">
-                <div>
-                  <div class="stat">Up to 2.9%</div>
-                  <span class="lbl">card top-up fees</span>
-                </div>
-                <div>
-                  <div class="stat">Up to 1% / 0S</div>
-                  <span class="lbl">card transaction fee</span>
-                </div>
-                <div>
-                  <div class="stat">Up to 40$</div>
-                  <span class="lbl">monthly card fee</span>
-                </div>
+                <div><div class="stat">0.55%</div><span class="lbl">Blended rate from</span></div>
+                <div><div class="stat">24h</div><span class="lbl">Average switch time</span></div>
+                <div><div class="stat">£0</div><span class="lbl">Hidden fees, ever</span></div>
               </div>
-              <a class="btn btn-primary" href="card-machines.html">
-                Apply now
-                <span class="btn-arrow" aria-hidden="true">→</span>
+              <a class="btn btn-primary magnetic" data-magnetic=".35" href="card-machines.html">
+                <span class="magnetic-inner">Apply now <span class="btn-arrow" aria-hidden="true">→</span></span>
               </a>
             </div>
             <div class="phone">
@@ -347,15 +595,15 @@
       <!-- ================== TESTIMONIALS ================== -->
       <section class="fc-section fc-section-tint">
         <div class="container">
-          <p class="fc-eyebrow reveal">Testimonial</p>
-          <h2 class="fc-headline reveal" style="--delay:60ms">
-            Built for clients<br />who demand results
+          <p class="fc-eyebrow reveal-up">Testimonial</p>
+          <h2 class="fc-headline under reveal-up" style="--delay:60ms">
+            Built for clients<br /><em style="color:var(--accent-deep)">who demand</em> results
           </h2>
-          <p class="fc-subhead reveal" style="--delay:120ms">
-            Plemmo provides powerful business solutions that clients value for performance and reliability. Manage your business with confidence.
+          <p class="fc-subhead reveal-up" style="--delay:120ms">
+            Plemmo provides powerful business solutions that clients value for performance and reliability.
           </p>
           <div class="fc-testimonials">
-            <article class="fc-testimonial reveal">
+            <article class="fc-testimonial spotlight reveal-up" data-tilt="3">
               <div class="head">
                 <div class="av">RD</div>
                 <div class="who"><strong>Rahul Das</strong><span>Head of Marketing</span></div>
@@ -364,7 +612,7 @@
               <p>Plemmo has completely transformed how we manage business finances. The platform is simple, reliable, and helps us make smarter financial decisions every day.</p>
               <div class="meta"><span>10:30 AM</span><span>December 6, 2025</span></div>
             </article>
-            <article class="fc-testimonial reveal" style="--delay:80ms">
+            <article class="fc-testimonial spotlight reveal-up" data-tilt="3" style="--delay:80ms">
               <div class="head">
                 <div class="av b">AK</div>
                 <div class="who"><strong>Ayesha Karim</strong><span>Sales Operations Lead</span></div>
@@ -373,7 +621,7 @@
               <p>We were looking for a secure and efficient financial solution, and Plemmo exceeded our expectations. Their tools make managing payments and tracking finances seamless.</p>
               <div class="meta"><span>2:15 PM</span><span>December 5, 2025</span></div>
             </article>
-            <article class="fc-testimonial reveal" style="--delay:160ms">
+            <article class="fc-testimonial spotlight reveal-up" data-tilt="3" style="--delay:160ms">
               <div class="head">
                 <div class="av c">JM</div>
                 <div class="who"><strong>John Miller</strong><span>Growth Manager</span></div>
@@ -390,16 +638,15 @@
       <section class="fc-section">
         <div class="container">
           <div class="fc-fee">
-            <div class="reveal">
+            <div class="reveal-up">
               <p class="ey">Transparent</p>
-              <h3>One transparent fee. <br />No hidden costs.</h3>
+              <h3>One transparent fee. <br /><em style="color:var(--accent-deep)">No</em> hidden costs.</h3>
               <p>Our simple and transparent pricing ensures there are no hidden charges, giving you complete confidence and control over your business costs.</p>
-              <a class="btn btn-primary" href="contact.html">
-                Apply now
-                <span class="btn-arrow" aria-hidden="true">→</span>
+              <a class="btn btn-primary magnetic" data-magnetic=".35" href="contact.html">
+                <span class="magnetic-inner">Apply now <span class="btn-arrow" aria-hidden="true">→</span></span>
               </a>
             </div>
-            <div class="fc-fee-card reveal" style="--delay:80ms">
+            <div class="fc-fee-card grad-border spotlight reveal-up" data-tilt="4" style="--delay:80ms">
               <div class="fc-fee-toggle">
                 <span class="on">Physical cards</span>
                 <span>Virtual cards</span>
@@ -407,28 +654,23 @@
               <div class="fc-fee-row">
                 <div class="left">
                   <div class="av">V</div>
-                  <div>
-                    <div class="num">•••• 7890</div>
-                    <div class="lbl">Card number</div>
-                  </div>
+                  <div><div class="num">•••• 7890</div><div class="lbl">Card number</div></div>
                 </div>
-                <div class="right">
-                  <div class="amt">£88,200.00</div>
-                  <div class="date">03/25</div>
-                </div>
+                <div class="right"><div class="amt">£88,200.00</div><div class="date">03/25</div></div>
               </div>
               <div class="fc-fee-row">
                 <div class="left">
                   <div class="av alt">M</div>
-                  <div>
-                    <div class="num">•••• 4990</div>
-                    <div class="lbl">Card number</div>
-                  </div>
+                  <div><div class="num">•••• 4990</div><div class="lbl">Card number</div></div>
                 </div>
-                <div class="right">
-                  <div class="amt">£230.50</div>
-                  <div class="date">07/22</div>
+                <div class="right"><div class="amt">£230.50</div><div class="date">07/22</div></div>
+              </div>
+              <div class="fc-fee-row">
+                <div class="left">
+                  <span class="notif-dot"></span>
+                  <div style="margin-left:6px"><div class="num" style="font-size:.85rem;color:var(--success)">Live transaction · 12s ago</div><div class="lbl">Plemmo Pay</div></div>
                 </div>
+                <div class="right"><div class="amt" style="color:var(--success)">+£42.00</div><div class="date">today</div></div>
               </div>
             </div>
           </div>
@@ -438,115 +680,91 @@
       <!-- ================== ARTICLES ================== -->
       <section class="fc-section fc-section-tint">
         <div class="container">
-          <p class="fc-eyebrow reveal">Articles</p>
-          <h2 class="fc-headline reveal" style="--delay:60ms">Our latest articles</h2>
+          <p class="fc-eyebrow reveal-up">Articles</p>
+          <h2 class="fc-headline under reveal-up" style="--delay:60ms">Our latest articles</h2>
           <div class="fc-articles">
-            <a class="fc-article reveal" href="funding.html">
+            <a class="fc-article spotlight reveal-up" href="funding.html" data-tilt="4">
               <div class="fc-article-img">
                 <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
                   <defs>
-                    <linearGradient id="a1" x1="0" y1="0" x2="1" y2="1">
+                    <linearGradient id="aA" x1="0" y1="0" x2="1" y2="1">
                       <stop offset="0" stop-color="#f4dca0"/><stop offset="1" stop-color="#cfe07e"/>
                     </linearGradient>
                   </defs>
-                  <rect width="400" height="250" fill="url(#a1)"/>
-                  <circle cx="200" cy="115" r="55" fill="#f4cba0"/>
-                  <path d="M120 250 Q 200 170 280 250 Z" fill="#0a0d0a"/>
+                  <rect width="400" height="250" fill="url(#aA)"/>
+                  <circle cx="200" cy="105" r="58" fill="#f4cba0"/>
+                  <path d="M120 250 Q 200 165 280 250 Z" fill="#0a0d0a"/>
+                  <g transform="translate(180 140)" stroke="#0a0d0a" stroke-width="2" fill="none">
+                    <path d="M0 0 L40 -30" stroke-linecap="round"/>
+                  </g>
                 </svg>
               </div>
               <div class="fc-article-body">
-                <h4>How to prepare you business for funding</h4>
-                <p>Streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+                <h4>How to prepare your business for funding</h4>
+                <p>The five things every UK lender will ask for, and how to have them ready in an afternoon.</p>
               </div>
             </a>
-            <a class="fc-article reveal" href="card-machines.html" style="--delay:80ms">
+            <a class="fc-article spotlight reveal-up" href="card-machines.html" style="--delay:80ms" data-tilt="4">
               <div class="fc-article-img">
                 <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
                   <defs>
-                    <linearGradient id="a2" x1="0" y1="0" x2="1" y2="1">
+                    <linearGradient id="aB" x1="0" y1="0" x2="1" y2="1">
                       <stop offset="0" stop-color="#c9eb4a"/><stop offset="1" stop-color="#7ea951"/>
                     </linearGradient>
                   </defs>
-                  <rect width="400" height="250" fill="url(#a2)"/>
-                  <rect x="160" y="80" width="80" height="140" rx="14" fill="#0a0d0a"/>
-                  <rect x="166" y="86" width="68" height="128" rx="10" fill="#fff"/>
-                  <text x="200" y="160" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="20" fill="#0a0d0a">£823</text>
+                  <rect width="400" height="250" fill="url(#aB)"/>
+                  <rect x="160" y="68" width="80" height="160" rx="14" fill="#0a0d0a"/>
+                  <rect x="166" y="74" width="68" height="148" rx="10" fill="#fff"/>
+                  <text x="200" y="138" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="22" fill="#0a0d0a">£823</text>
+                  <text x="200" y="160" text-anchor="middle" font-family="Inter" font-size="9" fill="#6a716c">Tap to charge</text>
                 </svg>
               </div>
               <div class="fc-article-body">
                 <h4>Smart ways to use growth capital</h4>
-                <p>Streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+                <p>Where successful operators put new funding — and the four traps that drain it.</p>
               </div>
             </a>
-            <a class="fc-article reveal" href="epos.html" style="--delay:160ms">
+            <a class="fc-article spotlight reveal-up" href="epos.html" style="--delay:160ms" data-tilt="4">
               <div class="fc-article-img">
                 <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
                   <defs>
-                    <linearGradient id="a3" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0" stop-color="#e0bd92"/><stop offset="1" stop-color="#977358"/>
+                    <linearGradient id="aC" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#e6c5a0"/><stop offset="1" stop-color="#977358"/>
                     </linearGradient>
                   </defs>
-                  <rect width="400" height="250" fill="url(#a3)"/>
-                  <rect x="80" y="100" width="240" height="120" rx="10" fill="#0a0d0a"/>
-                  <rect x="92" y="112" width="216" height="80" rx="6" fill="#c9eb4a"/>
-                  <circle cx="100" cy="60" r="22" fill="#fbe5d6"/>
+                  <rect width="400" height="250" fill="url(#aC)"/>
+                  <rect x="60" y="100" width="280" height="120" rx="12" fill="#0a0d0a"/>
+                  <rect x="74" y="114" width="252" height="76" rx="6" fill="#c9eb4a"/>
+                  <circle cx="100" cy="64" r="22" fill="#fbe5d6"/>
+                  <text x="200" y="158" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="20" fill="#0a0d0a">EPOS · v3</text>
                 </svg>
               </div>
               <div class="fc-article-body">
-                <h4>Smart ways to use growth capital</h4>
-                <p>Streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
+                <h4>What modern EPOS unlocks for hospitality</h4>
+                <p>Split bills, kitchen displays, and live floor plans — the small details that make service feel effortless.</p>
               </div>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- ================== FINAL CTA ================== -->
-      <section class="fc-final">
-        <div class="fc-final-scene" aria-hidden="true">
-          <svg viewBox="0 0 1600 600" preserveAspectRatio="xMidYMax slice">
-            <defs>
-              <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#f1f5e4"/>
-                <stop offset="1" stop-color="#d8e6b6"/>
-              </linearGradient>
-              <linearGradient id="hillF1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#9bbf6c"/>
-                <stop offset="1" stop-color="#6e9849"/>
-              </linearGradient>
-              <linearGradient id="hillF2" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#577a37"/>
-                <stop offset="1" stop-color="#3a5421"/>
-              </linearGradient>
-            </defs>
-            <rect width="1600" height="600" fill="url(#sky2)"/>
-            <path d="M0 280 Q 300 220 600 260 T 1200 250 T 1600 260 V600 H0Z" fill="url(#hillF1)" opacity=".7"/>
-            <path d="M0 380 Q 250 320 600 360 T 1200 350 T 1600 380 V600 H0Z" fill="url(#hillF2)"/>
-            <!-- foreground flowers/grass strokes -->
-            <g opacity=".85">
-              <circle cx="80" cy="500" r="14" fill="#ff8a3d"/>
-              <circle cx="200" cy="540" r="10" fill="#ffb37a"/>
-              <circle cx="320" cy="510" r="12" fill="#c9eb4a"/>
-              <circle cx="500" cy="540" r="14" fill="#ff8a3d"/>
-              <circle cx="700" cy="520" r="10" fill="#fff" opacity=".8"/>
-              <circle cx="900" cy="530" r="12" fill="#ffb37a"/>
-              <circle cx="1100" cy="510" r="14" fill="#c9eb4a"/>
-              <circle cx="1280" cy="540" r="10" fill="#ff8a3d"/>
-              <circle cx="1450" cy="520" r="12" fill="#fff" opacity=".8"/>
-            </g>
-          </svg>
-        </div>
-        <div class="container">
-          <p class="fc-eyebrow reveal">Join Now</p>
-          <h2 class="reveal" style="--delay:60ms">Build smarter<br />decisions, faster</h2>
-          <p class="reveal" style="--delay:120ms">Plemmo helps you make smarter business decisions with real-time insights and clear data. Access the information you need.</p>
-          <div class="reveal" style="--delay:180ms">
-            <a class="btn btn-primary btn-lg" href="https://wa.me/447842088092" target="_blank" rel="noopener">
-              Book a Demo
-              <span class="btn-arrow" aria-hidden="true">→</span>
+      <!-- ================== FINALE ================== -->
+      <section class="finale">
+        <div class="container finale-inner">
+          <p class="fc-eyebrow reveal-up" style="color:rgba(247,247,241,.5)">Join now</p>
+          <h2 class="reveal-up" style="--delay:60ms">
+            Build smarter decisions, <span class="accent">faster.</span>
+          </h2>
+          <p class="reveal-up" style="--delay:140ms">
+            Plemmo helps you make smarter business decisions with real-time insights and clear data. One conversation is usually enough.
+          </p>
+          <div class="reveal-up" style="--delay:220ms">
+            <a class="btn btn-primary btn-lg glow magnetic" data-magnetic=".4" href="https://wa.me/447842088092" target="_blank" rel="noopener">
+              <span class="magnetic-inner">Book a Demo <span class="btn-arrow" aria-hidden="true">→</span></span>
             </a>
           </div>
-          <div class="fc-final-spacer"></div>
+          <div class="section-divider" style="margin-top:64px"><span></span><span></span><span></span></div>
+          <div class="finale-mark reveal-blur" style="--delay:200ms">PLEMMO</div>
         </div>
       </section>
     </main>
@@ -557,60 +775,31 @@
         <div class="footer-top">
           <div>
             <a class="brand" href="index.html"><span class="brand-mark">P</span>Plemmo</a>
-            <p class="footer-blurb">Technology Park<br />B-44 Maca Carlos Street<br />SW20 Barcelona</p>
+            <p class="footer-blurb">The single toolkit for independent UK businesses — payments, EPOS, funding, signage, utilities and support, all under one roof.</p>
             <div class="footer-contacts">
-              <a href="mailto:hello@plemmo.co.uk">✉️ hello@plemmo.co.uk</a>
               <a href="tel:07842088092">📞 07842 088092</a>
+              <a href="https://wa.me/447842088092" target="_blank" rel="noopener">💬 WhatsApp 07842 088092</a>
+              <a href="mailto:hello@plemmo.co.uk">✉️ hello@plemmo.co.uk</a>
+              <span>📍 Flat 2, 40 Holyhead Road, Birmingham, B21 0LS</span>
             </div>
           </div>
           <div class="footer-cols">
-            <div>
-              <h4>Products</h4>
-              <a href="card-machines.html">Plemmo Pay</a>
-              <a href="epos.html">Payment links</a>
-              <a href="card-machines.html">Plug-ins</a>
-              <a href="utilities.html">Online tracking</a>
-              <a href="card-machines.html">Virtual cards</a>
-              <a href="signage.html">Personal access</a>
-            </div>
-            <div>
-              <h4>Management</h4>
-              <a href="card-machines.html">Multi-currency wallet</a>
-              <a href="funding.html">Investments</a>
-              <a href="card-machines.html">Transfers</a>
-              <a href="utilities.html">Bills</a>
-              <a href="epos.html">eWallet</a>
-              <a href="contact.html">Cashback</a>
-            </div>
-            <div>
-              <h4>Social Media</h4>
-              <a href="#">Facebook</a>
-              <a href="#">LinkedIn</a>
-              <a href="#">Twitter</a>
-            </div>
-            <div>
-              <h4>Solution</h4>
-              <a href="funding.html">Financial</a>
-              <a href="about.html">Invest &amp; CEOs</a>
-              <a href="contact.html">Customer service</a>
-              <a href="about.html">Human resources</a>
-            </div>
+            <div><h4>About</h4><a href="about.html">About Plemmo</a><a href="about.html#vows">Our Vows</a><a href="refer.html">Refer &amp; Earn</a><a href="contact.html">Contact</a></div>
+            <div><h4>Solutions</h4><a href="card-machines.html">Plemmo Pay</a><a href="epos.html">Plemmo EPOS</a><a href="funding.html">Plemmo Funding</a><a href="signage.html">Plemmo Signage</a><a href="call-centre.html">Plemmo Connect</a><a href="utilities.html">Plemmo Utilities</a></div>
+            <div><h4>Industries</h4><a href="#">Restaurants &amp; Takeaways</a><a href="#">Retail &amp; Convenience</a><a href="#">Salons &amp; Barbers</a><a href="#">Mobile Traders</a><a href="#">Cafés</a></div>
+            <div><h4>Get in touch</h4><a href="tel:07842088092">07842 088092</a><a href="https://wa.me/447842088092" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:hello@plemmo.co.uk">hello@plemmo.co.uk</a><a href="contact.html">Contact form</a></div>
           </div>
         </div>
         <p class="footer-legal">Plemmo is a trading name of [Your Registered Company Name]. We act as an independent business consultancy and credit broker. We are not a lender or a direct payment acquirer. We introduce customers to a hand-picked panel of providers and may receive a commission for these introductions. All offers are subject to status and provider terms &amp; conditions. Some support services (including call-handling partners) operate from offshore locations including Pakistan. Products, rates and offers are subject to change. E&amp;OE.</p>
         <div class="footer-base">
-          <span>Copyright 2026 — all rights reserved.</span>
+          <span>© <span id="year">2026</span> Plemmo. All rights reserved.</span>
           <div class="footer-base-links">
-            <a href="#">Privacy</a>
-            <a href="#">Security</a>
-            <a href="#">Terms</a>
-            <a href="#">English</a>
+            <a href="#">Privacy Policy</a><a href="#">Cookie Policy</a><a href="#">Terms &amp; Conditions</a><a href="#">Complaints</a><a href="#">Modern Slavery Statement</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Floating WhatsApp -->
     <a class="whatsapp-fab" href="https://wa.me/447842088092?text=Hi%2C%20I%27m%20enquiring%20from%20your%20website." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.06 17.59L3 21.5l4-1.05a10 10 0 0 0 4.95 1.27h.01a10 10 0 0 0 7.09-17.81zM12 19.85a8.31 8.31 0 0 1-4.23-1.16l-.3-.18-2.39.63.64-2.32-.2-.31A8.31 8.31 0 1 1 12 19.85zm4.55-6.21c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.56.13-.16.25-.65.81-.79.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1.01 2.55.13.16 1.74 2.66 4.22 3.73.59.25 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.31z"/></svg>
       <span class="label">Chat on WhatsApp</span>
